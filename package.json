@@ -1,0 +1,27 @@
+{
+  "name": "color-gopher-api",
+  "version": "1.0.0",
+  "description": "A color converter and palette generator",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "color",
+    "RGB",
+    "CMYK",
+    "HSV",
+    "HSL",
+    "HEX",
+    "palette",
+    "convert"
+  ],
+  "author": "David G. Smith",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
