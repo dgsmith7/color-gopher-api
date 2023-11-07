@@ -15,12 +15,11 @@ This API is available on RapidAPI at color-gopher-api.
 **Description:** Landing page.
 **Parameters:**
 &nbsp;&nbsp;&nbsp;&nbsp;none
-**Responses:** 200-OK
+**Responses:** <code>200-OK</code>
 **Response Body:**
 
-```"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
-
-```
+<code>"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
+</code>
 
 **Endpoint:** /gopher/rgb-to-all
 **Method:** GET
