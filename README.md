@@ -12,12 +12,16 @@ This API is available on RapidAPI at color-gopher-api.
 
 ## API Reference: Color Gopher API 1.0.0
 
-**Endpoint:** /  
+### Endpoint:
+
+/  
 **Method:** GET  
-**Description:** Landing page.  
+**Description:**  
+Landing page.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;none  
 **Responses:**
+
 <code>200-OK</code>
 
 **Response Body:**
@@ -25,15 +29,18 @@ This API is available on RapidAPI at color-gopher-api.
 <code>"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
 </code>
 
-**Endpoint:** /gopher/rgb-to-all
+### Endpoint:
+
+/gopher/rgb-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
+
 **Response Body:**
 
 ```{
@@ -68,439 +75,521 @@ This API is available on RapidAPI at color-gopher-api.
 }
 ```
 
-**Endpoint:** /gopher/hsv-to-all
+### Endpoint:
+
+/gopher/hsv-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsl-to-all
+### Endpoint:
+
+/gopher/hsl-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/cmyk-to-all
+### Endpoint:
+
+/gopher/cmyk-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
 k - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-all
+### Endpoint:
+
+/gopher/hex-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-all
+### Endpoint:
+
+/gopher/name-to-all
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-complement
+### Endpoint:
+
+/gopher/palette-complement
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-split-complement
+### Endpoint:
+
+/gopher/palette-split-complement
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-adjacent
+### Endpoint:
+
+/gopher/palette-adjacent
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-analagous
+### Endpoint:
+
+/gopher/palette-analagous
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-phi-triad
+### Endpoint:
+
+/gopher/palette-phi-triad
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-equi-triad
+### Endpoint:
+
+/gopher/palette-equi-triad
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-phi-tetrad
+### Endpoint:
+
+/gopher/palette-phi-tetrad
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-equi-tetrad
+### Endpoint:
+
+/gopher/palette-equi-tetrad
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-mono-scale
+### Endpoint:
+
+/gopher/palette-mono-scale
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/palette-interpolate
+### Endpoint:
+
+/gopher/palette-interpolate
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r1 - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g1 - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b1 - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r2 - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g2 - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b2 - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/rgb-to-hsv
+### Endpoint:
+
+/gopher/rgb-to-hsv
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsv-to-rgb
+### Endpoint:
+
+/gopher/hsv-to-rgb
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/rgb-to-cmyk
+### Endpoint:
+
+/gopher/rgb-to-cmyk
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/cmyk-to-rgb
+### Endpoint:
+
+/gopher/cmyk-to-rgb
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/rgb-to-hsl
+### Endpoint:
+
+/gopher/rgb-to-hsl
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsl-to-rgb
+### Endpoint:
+
+/gopher/hsl-to-rgb
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/rgb-to-hex
+### Endpoint:
+
+/gopher/rgb-to-hex
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-rgb
+### Endpoint:
+
+/gopher/hex-to-rgb
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsv-to-hsl
+### Endpoint:
+
+/gopher/hsv-to-hsl
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsl-to-hsv
+### Endpoint:
+
+/gopher/hsl-to-hsv
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsl-to-cmyk
+### Endpoint:
+
+/gopher/hsl-to-cmyk
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/cmyk-to-hsl
+### Endpoint:
+
+/gopher/cmyk-to-hsl
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsv-to-cmyk
+### Endpoint:
+
+/gopher/hsv-to-cmyk
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/cmyk-to-hsv
+### Endpoint:
+
+/gopher/cmyk-to-hsv
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsv-to-hex
+### Endpoint:
+
+/gopher/hsv-to-hex
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-hsv
+### Endpoint:
+
+/gopher/hex-to-hsv
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hsl-to-hex
+### Endpoint:
+
+/gopher/hsl-to-hex
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-hsl
+### Endpoint:
+
+/gopher/hex-to-hsl
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/cmyk-to-hex
+### Endpoint:
+
+/gopher/cmyk-to-hex
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-cmyk
+### Endpoint:
+
+/gopher/hex-to-cmyk
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-hex
+### Endpoint:
+
+/gopher/name-to-hex
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/hex-to-name
+### Endpoint:
+
+/gopher/hex-to-name
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-rgb
+### Endpoint:
+
+/gopher/name-to-rgb
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-hsv
+### Endpoint:
+
+/gopher/name-to-hsv
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-hsl
+### Endpoint:
+
+/gopher/name-to-hsl
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
-**Endpoint:** /gopher/name-to-cmyk
+### Endpoint:
+
+/gopher/name-to-cmyk
 **Method:** GET
-**Description:**
-**Parameters:**
+**Description:**  
+**Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-`200 - OK`
+**Responses:**  
+<code>200 - OK</code>
 **Response Body:**
 
 ## Code Examples:
