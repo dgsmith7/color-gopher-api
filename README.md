@@ -344,6 +344,38 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
+
 <hr>
 
 ### Endpoint: /gopher/palette-split-complement
@@ -361,6 +393,38 @@ This API is available on RapidAPI at color-gopher-api.
 ```
 
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
 
 <hr>
 
@@ -380,6 +444,38 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
+
 <hr>
 
 ### Endpoint: /gopher/palette-analagous
@@ -397,6 +493,38 @@ This API is available on RapidAPI at color-gopher-api.
 ```
 
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
 
 <hr>
 
@@ -416,6 +544,38 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
+
 <hr>
 
 ### Endpoint: /gopher/palette-equi-triad
@@ -433,6 +593,38 @@ This API is available on RapidAPI at color-gopher-api.
 ```
 
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
 
 <hr>
 
@@ -452,6 +644,38 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
+
 <hr>
 
 ### Endpoint: /gopher/palette-equi-tetrad
@@ -470,6 +694,38 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
+
 <hr>
 
 ### Endpoint: /gopher/palette-mono-scale
@@ -487,6 +743,38 @@ This API is available on RapidAPI at color-gopher-api.
 ```
 
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
 
 <hr>
 
@@ -508,6 +796,38 @@ This API is available on RapidAPI at color-gopher-api.
 ```
 
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 240,
+        "g": 248,
+        "b": 255
+      },
+      "HSV": {
+        "h": 208,
+        "s": 6,
+        "v": 100
+      },
+      "HSL": {
+        "h": 208,
+        "s": 100,
+        "l": 97
+      },
+      "CMYK": {
+        "c": 5,
+        "m": 2,
+        "y": 0,
+        "k": 0
+      },
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
+    }
+  }
+}
+```
 
 <!-- <hr>
 

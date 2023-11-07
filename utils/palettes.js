@@ -1,5 +1,7 @@
-export function getComplementPalette(RGB) {
-  let colorIn = rgbToHsl(RGB);
+import * as converters from "../utils/converters.js";
+
+export function getComplementPalette(rgb) {
+  let colorIn = converters.rgbToHsl(rgb);
   let newH;
   if (colorIn.h < 180) {
     newH = colorIn.h + 180;
@@ -7,15 +9,15 @@ export function getComplementPalette(RGB) {
     newH = colorIn.h - 180;
   }
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
-    color1: hslToRgb({ h: newH, s: colorIn.s, l: colorIn.l }),
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
+    color1: converters.hslToRgb({ h: newH, s: colorIn.s, l: colorIn.l }),
   };
   return obj;
 }
 
-export function getSplitComplementPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getSplitComplementPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let split1 = originalAngle + 30;
   if (split1 > 360) {
     split1 >= split1 - 360;
@@ -28,11 +30,11 @@ export function getSplitComplementPalette(RGB) {
   if (split3 > 360) {
     split3 >= split3 - 360;
   }
-  let col1 = hslToRgb({ h: split1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: split2, s: HSL.s, l: HSL.l });
-  let col3 = hslToRgb({ h: split3, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: split1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: split2, s: hsl.s, l: hsl.l });
+  let col3 = converters.hslToRgb({ h: split3, s: hsl.s, l: hsl.l });
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color1: col1,
     color2: col2,
     color3: col3,
@@ -40,9 +42,9 @@ export function getSplitComplementPalette(RGB) {
   return obj;
 }
 
-export function getAdjacentPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getAdjacentPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let split1 = originalAngle + 35;
   if (split1 > 360) {
     split1 >= split1 - 360;
@@ -51,19 +53,19 @@ export function getAdjacentPalette(RGB) {
   if (split2 > 360) {
     split2 >= split2 - 360;
   }
-  let col1 = hslToRgb({ h: split1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: split2, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: split1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: split2, s: hsl.s, l: hsl.l });
   let obj = {
     color1: col1,
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color2: col2,
   };
   return obj;
 }
 
-export function getAnalogousPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getAnalogousPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let split1 = originalAngle - 20;
   if (split1 > 360) {
     split1 >= split1 - 360;
@@ -80,23 +82,23 @@ export function getAnalogousPalette(RGB) {
   if (split4 > 360) {
     split4 >= split4 - 360;
   }
-  let col1 = hslToRgb({ h: split1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: split2, s: HSL.s, l: HSL.l });
-  let col3 = hslToRgb({ h: split3, s: HSL.s, l: HSL.l });
-  let col4 = hslToRgb({ h: split4, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: split1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: split2, s: hsl.s, l: hsl.l });
+  let col3 = converters.hslToRgb({ h: split3, s: hsl.s, l: hsl.l });
+  let col4 = converters.hslToRgb({ h: split4, s: hsl.s, l: hsl.l });
   let obj = {
     color1: col1,
     color2: col2,
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color3: col3,
     color4: col4,
   };
   return obj;
 }
 
-export function getPhiTriadPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getPhiTriadPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let complementAngle;
   if (originalAngle >= 180) {
     complementAngle = originalAngle - 180;
@@ -111,16 +113,16 @@ export function getPhiTriadPalette(RGB) {
   if (phi2 > 360) {
     phi2 >= phi2 - 360;
   }
-  let col1 = hslToRgb({ h: originalAngle, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: phi1, s: HSL.s, l: HSL.l });
-  let col3 = hslToRgb({ h: phi2, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: originalAngle, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: phi1, s: hsl.s, l: hsl.l });
+  let col3 = converters.hslToRgb({ h: phi2, s: hsl.s, l: hsl.l });
   let obj = { color1: col1, color2: col2, color3: col3 };
   return obj;
 }
 
-export function getEquiTriadPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getEquiTriadPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let third1 = originalAngle + 120;
   if (third1 > 360) {
     third1 >= third1 - 360;
@@ -129,19 +131,19 @@ export function getEquiTriadPalette(RGB) {
   if (third2 > 360) {
     third2 >= third2 - 360;
   }
-  let col1 = hslToRgb({ h: third1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: third2, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: third1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: third2, s: hsl.s, l: hsl.l });
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color1: col1,
     color2: col2,
   };
   return obj;
 }
 
-export function getPhiTetradPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getPhiTetradPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let split1 = originalAngle + 36;
   if (split1 > 360) {
     split1 >= split1 - 360;
@@ -154,11 +156,11 @@ export function getPhiTetradPalette(RGB) {
   if (split3 > 360) {
     split3 >= split3 - 360;
   }
-  let col1 = hslToRgb({ h: split1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: split2, s: HSL.s, l: HSL.l });
-  let col3 = hslToRgb({ h: split3, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: split1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: split2, s: hsl.s, l: hsl.l });
+  let col3 = converters.hslToRgb({ h: split3, s: hsl.s, l: hsl.l });
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color1: col1,
     color2: col2,
     color3: col3,
@@ -166,9 +168,9 @@ export function getPhiTetradPalette(RGB) {
   return obj;
 }
 
-export function getEquiTetradPalette(RGB) {
-  let HSL = rgbToHsl(RGB);
-  let originalAngle = HSL.h;
+export function getEquiTetradPalette(rgb) {
+  let hsl = converters.rgbToHsl(rgb);
+  let originalAngle = hsl.h;
   let split1 = originalAngle + 90;
   if (split1 > 360) {
     split1 >= split1 - 360;
@@ -181,11 +183,11 @@ export function getEquiTetradPalette(RGB) {
   if (split3 > 360) {
     split3 >= split3 - 360;
   }
-  let col1 = hslToRgb({ h: split1, s: HSL.s, l: HSL.l });
-  let col2 = hslToRgb({ h: split2, s: HSL.s, l: HSL.l });
-  let col3 = hslToRgb({ h: split3, s: HSL.s, l: HSL.l });
+  let col1 = converters.hslToRgb({ h: split1, s: hsl.s, l: hsl.l });
+  let col2 = converters.hslToRgb({ h: split2, s: hsl.s, l: hsl.l });
+  let col3 = converters.hslToRgb({ h: split3, s: hsl.s, l: hsl.l });
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color1: col1,
     color2: col2,
     color3: col3,
@@ -193,10 +195,10 @@ export function getEquiTetradPalette(RGB) {
   return obj;
 }
 
-export function getMonoScale(RGB) {
+export function getMonoScale(rgb) {
   let shiftFactor;
-  let HSL = rgbToHsl(RGB);
-  let originalLightness = HSL.l;
+  let hsl = converters.rgbToHsl(rgb);
+  let originalLightness = hsl.l;
   if (originalLightness < 200) {
     shiftFactor = 0;
   } else if (originalLightness >= 200 && originalLightness < 250) {
@@ -220,12 +222,12 @@ export function getMonoScale(RGB) {
   if (split4 > 360) {
     split4 >= split4 - 360;
   }
-  let col1 = hslToRgb({ h: HSL.h, s: HSL.s, l: split1 });
-  let col2 = hslToRgb({ h: HSL.h, s: HSL.s, l: split2 });
-  let col3 = hslToRgb({ h: HSL.h, s: HSL.s, l: split3 });
-  let col4 = hslToRgb({ h: HSL.h, s: HSL.s, l: split4 });
+  let col1 = converters.hslToRgb({ h: hsl.h, s: hsl.s, l: split1 });
+  let col2 = converters.hslToRgb({ h: hsl.h, s: hsl.s, l: split2 });
+  let col3 = converters.hslToRgb({ h: hsl.h, s: hsl.s, l: split3 });
+  let col4 = converters.hslToRgb({ h: hsl.h, s: hsl.s, l: split4 });
   let obj = {
-    original: { r: RGB.r, g: RGB.g, b: RGB.b },
+    original: { r: rgb.r, g: rgb.g, b: rgb.b },
     color1: col1,
     color2: col2,
     color3: col3,
@@ -234,63 +236,63 @@ export function getMonoScale(RGB) {
   return obj;
 }
 
-export function interpolate(RGB1, RGB2) {
-  let HSV1 = rgbToHsv(RGB1);
-  let HSV2 = rgbToHsv(RGB2);
-  let startHue = HSV1.h;
-  let endHue = HSV2.h;
+export function interpolate(rgb1, rgb2) {
+  let hsv1 = converters.rgbToHsv(rgb1);
+  let hsv2 = converters.rgbToHsv(rgb2);
+  let startHue = hsv1.h;
+  let endHue = hsv2.h;
   let intervalHue = (endHue - startHue) / 8;
-  let startSat = HSV1.s;
-  let endSat = HSV2.s;
+  let startSat = hsv1.s;
+  let endSat = hsv2.s;
   let intervalSat = (endSat - startSat) / 8;
-  let startVal = HSV1.v;
-  let endVal = HSV2.v;
+  let startVal = hsv1.v;
+  let endVal = hsv2.v;
   let intervalVal = (endVal - startVal) / 8;
   let col1 = {
-    h: HSV1.h + intervalHue,
-    s: HSV1.s + intervalSat,
-    v: HSV1.v + intervalVal,
+    h: hsv1.h + intervalHue,
+    s: hsv1.s + intervalSat,
+    v: hsv1.v + intervalVal,
   };
   let col2 = {
-    h: HSV1.h + intervalHue * 2,
-    s: HSV1.s + intervalSat * 2,
-    v: HSV1.v + intervalVal * 2,
+    h: hsv1.h + intervalHue * 2,
+    s: hsv1.s + intervalSat * 2,
+    v: hsv1.v + intervalVal * 2,
   };
   let col3 = {
-    h: HSV1.h + intervalHue * 3,
-    s: HSV1.s + intervalSat * 3,
-    v: HSV1.v + intervalVal * 3,
+    h: hsv1.h + intervalHue * 3,
+    s: hsv1.s + intervalSat * 3,
+    v: hsv1.v + intervalVal * 3,
   };
   let col4 = {
-    h: HSV1.h + intervalHue * 4,
-    s: HSV1.s + intervalSat * 4,
-    v: HSV1.v + intervalVal * 4,
+    h: hsv1.h + intervalHue * 4,
+    s: hsv1.s + intervalSat * 4,
+    v: hsv1.v + intervalVal * 4,
   };
   let col5 = {
-    h: HSV1.h + intervalHue * 5,
-    s: HSV1.s + intervalSat * 5,
-    v: HSV1.v + intervalVal * 5,
+    h: hsv1.h + intervalHue * 5,
+    s: hsv1.s + intervalSat * 5,
+    v: hsv1.v + intervalVal * 5,
   };
   let col6 = {
-    h: HSV1.h + intervalHue * 6,
-    s: HSV1.s + intervalSat * 6,
-    v: HSV1.v + intervalVal * 6,
+    h: hsv1.h + intervalHue * 6,
+    s: hsv1.s + intervalSat * 6,
+    v: hsv1.v + intervalVal * 6,
   };
   let col7 = {
-    h: HSV1.h + intervalHue * 7,
-    s: HSV1.s + intervalSat * 7,
-    v: HSV1.v + intervalVal * 7,
+    h: hsv1.h + intervalHue * 7,
+    s: hsv1.s + intervalSat * 7,
+    v: hsv1.v + intervalVal * 7,
   };
   let obj = {
-    front: { r: RGB1.r, g: RGB1.g, b: RGB1.b },
-    color1: hsvToRgb(col1),
-    color2: hsvToRgb(col2),
-    color3: hsvToRgb(col3),
-    color4: hsvToRgb(col4),
-    color5: hsvToRgb(col5),
-    color6: hsvToRgb(col6),
-    color7: hsvToRgb(col7),
-    end: { r: RGB2.r, g: RGB2.g, b: RGB2.b },
+    front: { r: rgb1.r, g: rgb1.g, b: rgb1.b },
+    color1: converters.hsvToRgb(col1),
+    color2: converters.hsvToRgb(col2),
+    color3: converters.hsvToRgb(col3),
+    color4: converters.hsvToRgb(col4),
+    color5: converters.hsvToRgb(col5),
+    color6: converters.hsvToRgb(col6),
+    color7: converters.hsvToRgb(col7),
+    end: { r: rgb2.r, g: rgb2.g, b: rgb2.b },
   };
   return obj;
 }
