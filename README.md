@@ -18,6 +18,10 @@ This API is available on RapidAPI at color-gopher-api.
 **Responses:** 200-OK
 **Response Body:**
 
+```"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
+
+```
+
 **Endpoint:** /gopher/rgb-to-all
 **Method:** GET
 **Description:**
@@ -30,34 +34,34 @@ This API is available on RapidAPI at color-gopher-api.
 **Response Body:**
 
 ```{
-"status": "success",
-"data": {
-"ALL": {
-"RGB": {
-"r": 255,
-"g": 0,
-"b": 0
-},
-"HSV": {
-"h": 0,
-"s": 100,
-"v": 100
-},
-"HSL": {
-"h": 0,
-"s": 100,
-"l": 50
-},
-"CMYK": {
-"c": 0,
-"m": 100,
-"y": 100,
-"k": 0
-},
-"HEX": "#ff0000",
-"NAME": "red"
-}
-}
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
 }
 ```
 
@@ -498,35 +502,40 @@ k - string (query)
 
 ## Code Examples:
 
-CURL:
+_*CURL:*_
 
 ```curl -X 'GET' \
- 'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
- -H 'accept: _/_'
+  'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
+  -H 'accept: */*'
 ```
 
-JS:
+_*JS:*_
 
 ```fetch('http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0', {
-headers: {
-'accept': '_/_'
-}
+  headers: {
+    'accept': '*/*'
+  }
 });
 ```
 
-PYTHON:
+_*PYTHON:*_
 
-```import http.client
+```import requests
 
-conn = http.client.HTTPConnection('localhost:5500')
 headers = {
-'accept': '_/_',
+    'accept': '*/*',
 }
-conn.request('GET', '/gopher/rgb-to-all?r=255&g=0&b=0', headers=headers)
-response = conn.getresponse()
+
+params = {
+    'r': '255',
+    'g': '0',
+    'b': '0',
+}
+
+response = requests.get('http://localhost:5500/gopher/rgb-to-all', params=params, headers=headers)
 ```
 
-PHP:
+_*PHP:*_
 
 ```<?php
 $ch = curl_init();
@@ -544,19 +553,19 @@ curl_close($ch);
 
 ## Glossary:
 
-Adjacent Palette
-Analogous Palette
-Complementary Palette
-CSS named color
-CMYK
-Equilateral Tetrad Palette
-Equilateral Triad Palette
-HEX
-HSL
-HSV
-Interpolation
-Monochromatic Palette
-Phi Tetrad Palette
-Phi Triad Palette
-RGB
-Split Complemenetary Palette
+**Adjacent Palette**
+**Analogous Palette**
+**Complementary Palette**
+**CSS named color**
+**CMYK**
+**Equilateral Tetrad Palette**
+**Equilateral Triad Palette**
+**HEX**
+**HSL**
+**HSV**
+**Interpolation**
+**Monochromatic Palette**
+**Phi Tetrad Palette**
+**Phi Triad Palette**
+**RGB**
+**Split Complemenetary Palette**
