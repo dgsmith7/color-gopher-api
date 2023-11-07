@@ -8,7 +8,6 @@ export const router = express.Router();
 router.get(`/rgb-to-all`, function (req, res) {
   //  res.status(200).json({ msg: `name-to-hex` });
   // res.json(rgbToAll({ r: 255, g: 0, b: 0 }));
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -20,7 +19,6 @@ router.get(`/rgb-to-all`, function (req, res) {
 });
 
 router.get(`/hsv-to-all`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let hsv = converters.paramsToHsv(req.query.h, req.query.s, req.query.v);
   let obj = {
     status: "success",
@@ -30,7 +28,6 @@ router.get(`/hsv-to-all`, function (req, res) {
 });
 
 router.get(`/hsl-to-all`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let hsl = converters.paramsToHsl(req.query.h, req.query.s, req.query.l);
   let obj = {
     status: "success",
@@ -40,7 +37,6 @@ router.get(`/hsl-to-all`, function (req, res) {
 });
 
 router.get(`/cmyk-to-all`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let cmyk = converters.paramsToCmyk(
     req.query.c,
     req.query.m,
@@ -55,7 +51,6 @@ router.get(`/cmyk-to-all`, function (req, res) {
 });
 
 router.get(`/hex-to-all`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -65,7 +60,6 @@ router.get(`/hex-to-all`, function (req, res) {
 });
 
 router.get(`/name-to-all`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",
@@ -75,7 +69,6 @@ router.get(`/name-to-all`, function (req, res) {
 });
 
 router.get(`/palette-complement`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -87,7 +80,6 @@ router.get(`/palette-complement`, function (req, res) {
 });
 
 router.get(`/palette-split-complement`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -99,7 +91,6 @@ router.get(`/palette-split-complement`, function (req, res) {
 });
 
 router.get(`/palette-adjacent`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -111,7 +102,6 @@ router.get(`/palette-adjacent`, function (req, res) {
 });
 
 router.get(`/palette-analagous`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -123,7 +113,6 @@ router.get(`/palette-analagous`, function (req, res) {
 });
 
 router.get(`/palette-phi-triad`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -135,7 +124,6 @@ router.get(`/palette-phi-triad`, function (req, res) {
 });
 
 router.get(`/palette-equi-triad`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -147,7 +135,6 @@ router.get(`/palette-equi-triad`, function (req, res) {
 });
 
 router.get(`/palette-phi-tetrad`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -159,7 +146,6 @@ router.get(`/palette-phi-tetrad`, function (req, res) {
 });
 
 router.get(`/palette-equi-tetrad`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -171,7 +157,6 @@ router.get(`/palette-equi-tetrad`, function (req, res) {
 });
 
 router.get(`/palette-mono-scale`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -183,7 +168,6 @@ router.get(`/palette-mono-scale`, function (req, res) {
 });
 
 router.get(`/palette-interpolate`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let front = converters.paramsToRgb(req.query.r1, req.query.g1, req.query.b1);
   let end = converters.paramsToRgb(req.query.r2, req.query.g2, req.query.b2);
   let obj = {
@@ -197,7 +181,6 @@ router.get(`/palette-interpolate`, function (req, res) {
 
 router.get(`/rgb-to-hsv`, function (req, res) {
   // Three integers, 0-255 inclusive, r, g, b
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -208,7 +191,6 @@ router.get(`/rgb-to-hsv`, function (req, res) {
 
 router.get(`/hsv-to-rgb`, function (req, res) {
   // Three integers, 0-359 inclusive degrees h, 0-100 inclusive % s, 0-100 inclusive % v
-  res.setHeader("Content-Type", "application/json");
   let hsv = converters.paramsToHsv(req.query.h, req.query.s, req.query.v);
   let obj = {
     status: "success",
@@ -219,7 +201,6 @@ router.get(`/hsv-to-rgb`, function (req, res) {
 
 router.get(`/rgb-to-cmyk`, function (req, res) {
   // Three integers, 0-359 inclusive degrees h, 0-100 inclusive % s, 0-100 inclusive % v
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -229,7 +210,6 @@ router.get(`/rgb-to-cmyk`, function (req, res) {
 });
 
 router.get(`/cmyk-to-rgb`, function (req, res) {
-  res.setHeader("Content-Type", "application/json");
   let cmyk = converters.paramsToCmyk(
     req.query.c,
     req.query.m,
@@ -245,7 +225,6 @@ router.get(`/cmyk-to-rgb`, function (req, res) {
 
 router.get(`/rgb-to-hsl`, function (req, res) {
   // Three integers, 0-255 inclusive, r, g, b
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -256,7 +235,6 @@ router.get(`/rgb-to-hsl`, function (req, res) {
 
 router.get(`/hsl-to-rgb`, function (req, res) {
   // Three integers, 0-359 inclusive degrees h, 0-100 inclusive % s, 0-100 inclusive % l
-  res.setHeader("Content-Type", "application/json");
   let hsl = converters.paramsToHsl(req.query.h, req.query.s, req.query.l);
   let obj = {
     status: "success",
@@ -267,7 +245,6 @@ router.get(`/hsl-to-rgb`, function (req, res) {
 
 router.get(`/rgb-to-hex`, function (req, res) {
   // Three integers, 0-255 inclusive, r, g, b
-  res.setHeader("Content-Type", "application/json");
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
@@ -279,7 +256,6 @@ router.get(`/rgb-to-hex`, function (req, res) {
 router.get(`/hex-to-rgb`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -291,7 +267,6 @@ router.get(`/hex-to-rgb`, function (req, res) {
 router.get(`/hsv-to-hsl`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsv = converters.paramsToHsv(req.query.h, req.query.s, req.query.v);
   let obj = {
     status: "success",
@@ -303,7 +278,6 @@ router.get(`/hsv-to-hsl`, function (req, res) {
 router.get(`/hsl-to-hsv`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsl = converters.paramsToHsl(req.query.h, req.query.s, req.query.l);
   let obj = {
     status: "success",
@@ -315,7 +289,6 @@ router.get(`/hsl-to-hsv`, function (req, res) {
 router.get(`/hsl-to-cmyk`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsl = converters.paramsToHsl(req.query.h, req.query.s, req.query.l);
   let obj = {
     status: "success",
@@ -327,7 +300,6 @@ router.get(`/hsl-to-cmyk`, function (req, res) {
 router.get(`/cmyk-to-hsl`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let cmyk = converters.paramsToCmyk(
     req.query.c,
     req.query.m,
@@ -344,7 +316,6 @@ router.get(`/cmyk-to-hsl`, function (req, res) {
 router.get(`/hsv-to-cmyk`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsv = converters.paramsToHsv(req.query.h, req.query.s, req.query.v);
   let obj = {
     status: "success",
@@ -353,10 +324,9 @@ router.get(`/hsv-to-cmyk`, function (req, res) {
   res.status(200).json(obj);
 });
 
-router.get(`cmyk-to-hsv`, function (req, res) {
+router.get(`/cmyk-to-hsv`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let cmyk = converters.paramsToCmyk(
     req.query.c,
     req.query.m,
@@ -370,10 +340,9 @@ router.get(`cmyk-to-hsv`, function (req, res) {
   res.status(200).json(obj);
 });
 
-router.get(`hsv-to-hex`, function (req, res) {
+router.get(`/hsv-to-hex`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsv = converters.paramsToHsv(req.query.h, req.query.s, req.query.v);
   let obj = {
     status: "success",
@@ -385,7 +354,6 @@ router.get(`hsv-to-hex`, function (req, res) {
 router.get(`/hex-to-hsv`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -397,7 +365,6 @@ router.get(`/hex-to-hsv`, function (req, res) {
 router.get(`/hsl-to-hex`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hsl = converters.paramsToHsl(req.query.h, req.query.s, req.query.l);
   let obj = {
     status: "success",
@@ -409,7 +376,6 @@ router.get(`/hsl-to-hex`, function (req, res) {
 router.get(`/hex-to-hsl`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -421,7 +387,6 @@ router.get(`/hex-to-hsl`, function (req, res) {
 router.get(`/cmyk-to-hex`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let cmyk = converters.paramsToCmyk(
     req.query.c,
     req.query.m,
@@ -438,7 +403,6 @@ router.get(`/cmyk-to-hex`, function (req, res) {
 router.get(`/hex-to-cmyk`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -450,7 +414,6 @@ router.get(`/hex-to-cmyk`, function (req, res) {
 router.get(`/name-to-hex`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",
@@ -462,7 +425,6 @@ router.get(`/name-to-hex`, function (req, res) {
 router.get(`/hex-to-name`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let hex = req.query.hex;
   let obj = {
     status: "success",
@@ -474,7 +436,6 @@ router.get(`/hex-to-name`, function (req, res) {
 router.get(`/name-to-rgb`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",
@@ -486,7 +447,6 @@ router.get(`/name-to-rgb`, function (req, res) {
 router.get(`/name-to-hsv`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",
@@ -498,7 +458,6 @@ router.get(`/name-to-hsv`, function (req, res) {
 router.get(`/name-to-hsl`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",
@@ -510,7 +469,6 @@ router.get(`/name-to-hsl`, function (req, res) {
 router.get(`/name-to-cmyk`, function (req, res) {
   // A hex string in the form "#E56F33"
   // Returns RGB object or null if format incorrect
-  res.setHeader("Content-Type", "application/json");
   let name = req.query.name;
   let obj = {
     status: "success",

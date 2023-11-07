@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import * as swaggerUi from "swagger-ui-express";
+import swaggerFile from "./swagger-output.json" assert { type: "json" };
 import { router } from "./routes/gopher.js";
 
 const app = express();
@@ -7,6 +9,7 @@ const app = express();
 //middleware
 app.use(express.json());
 app.use(cors());
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 // router
 app.use("/gopher", router);
@@ -55,4 +58,9 @@ app.use((req, res, next) => {
 
 // listen on port for requests
 const port = process.env.PORT || 5500;
-app.listen(port, () => console.log(`Listening on Port: ${port}`));
+app.listen(port, () => {
+  // console.log(
+  //   `Listening on Port:${port}\nAPI documentation: http://localhost:${port}/doc`
+  // );
+  console.log(`Listening on Port:${port}`);
+});

@@ -6,11 +6,13 @@ const doc = {
     title: "Color Gopher API", // by default: 'REST API'
     description: "A color converter and palette generator", // by default: ''
   },
-  host: "localhost:5500", // by default: 'localhost:3000'
-  basePath: "/", // by default: '/'
-  schemes: ["http"], // by default: ['http']
-  consumes: ["application / json"], // by default: ['application/json']
-  produces: ["application / json"], // by default: ['application/json']
+  servers: [
+    {
+      url: "http://localhost:5500", // by default: 'http://localhost:3000'
+      description: "", // by default: ''
+    },
+    // { ... }
+  ],
   tags: [
     // by default: empty Array
     {
@@ -19,8 +21,7 @@ const doc = {
     },
     // { ... }
   ],
-  securityDefinitions: {}, // by default: empty object
-  definitions: {}, // by default: empty object
+  components: {}, // by default: empty object
 };
 
 const outputFile = "./swagger-output.json";
@@ -29,4 +30,4 @@ const routes = ["./app.js"];
 /* NOTE: If you are using the express Router, you must pass in the 'routes' only the 
 root file where the route starts, such as index.js, app.js, routes.js, etc ... */
 
-swaggerAutogen()(outputFile, routes, doc);
+swaggerAutogen({ openapi: "3.0.0" })(outputFile, routes, doc);

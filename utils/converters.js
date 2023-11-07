@@ -262,7 +262,7 @@ export function nameToCmyk(name) {
 
 export function rgbToAll(rgb) {
   let hsv = rgbToHsv(rgb);
-  let hsl = rgbToHsv(rgb);
+  let hsl = rgbToHsl(rgb);
   let cmyk = rgbToCmyk(rgb);
   let hex = rgbToHex(rgb);
   let name = hexToNameTable.get(rgbToHex(rgb)) || null;
@@ -279,7 +279,7 @@ export function rgbToAll(rgb) {
 
 export function hsvToAll(hsv) {
   let rgb = hsvToRgb(hsv);
-  let hsl = rgbToHsv(hsv);
+  let hsl = hsvToHsl(hsv);
   let cmyk = hsvToCmyk(hsv);
   let hex = hsvToHex(hsv);
   let name = hexToNameTable.get(rgbToHex(rgb)) || null;
