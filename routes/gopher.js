@@ -101,12 +101,12 @@ router.get(`/palette-adjacent`, function (req, res) {
   res.status(200).json(obj);
 });
 
-router.get(`/palette-analagous`, function (req, res) {
+router.get(`/palette-analogous`, function (req, res) {
   let rgb = converters.paramsToRgb(req.query.r, req.query.g, req.query.b);
   let obj = {
     status: "success",
     data: {
-      palette: palettes.getAnalagousPalette(rgb),
+      palette: palettes.getAnalogousPalette(rgb),
     },
   };
   res.status(200).json(obj);

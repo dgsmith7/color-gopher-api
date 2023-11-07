@@ -34,7 +34,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/rgb-to-all
 
 **Method:** GET  
-**Description:** Converts an RGB to every other type in this API  
+**Description:** Converts an RGB to every other type in this API.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -84,7 +84,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsv-to-all
 
 **Method:** GET  
-**Description:** Converts an HSV to every other type in this API  
+**Description:** Converts an HSV to every other type in this API.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -134,7 +134,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsl-to-all
 
 **Method:** GET  
-**Description:** Converts an HSL to every other type in this API  
+**Description:** Converts an HSL to every other type in this API.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -184,7 +184,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/cmyk-to-all
 
 **Method:** GET  
-**Description:** Converts a CMYK to every other type in this API  
+**Description:** Converts a CMYK to every other type in this API.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
@@ -235,7 +235,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hex-to-all
 
 **Method:** GET  
-**Description:** Converts a HEX to every other type in this API  
+**Description:** Converts a HEX to every other type in this API.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
 **Responses:**
@@ -331,7 +331,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-complement
 
 **Method:** GET  
-**Description:**  
+**Description:** A two-color palette on an HSL color wheel where a color 180 degrees away from the original color is chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -349,7 +349,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-split-complement
 
 **Method:** GET  
-**Description:**  
+**Description:** A palette on an HSL color wheel where two color, one 35 degrees away in each direction are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -367,7 +367,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-adjacent
 
 **Method:** GET  
-**Description:**  
+**Description:** A three-color palette on an HSL color wheel where two colors, one 35 degrees away in each direction are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -385,7 +385,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-analagous
 
 **Method:** GET  
-**Description:**  
+**Description:** A five-color palette on an HSL color wheel where four colors, which are 20 and 40 degrees away in each direction are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -403,7 +403,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-phi-triad
 
 **Method:** GET  
-**Description:**  
+**Description:** A three-color palette on an HSL color wheel where two colors, each phi degrees away from the original's complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio, and is approximately 36 degrees.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -421,7 +421,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-equi-triad
 
 **Method:** GET  
-**Description:**  
+**Description:** A three-color palette on an HSL color wheel where two colors, at 120 and 240 degrees away from the original are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -439,7 +439,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-phi-tetrad
 
 **Method:** GET  
-**Description:**  
+**Description:** A four-color palette on an HSL color wheel where three colors, one complenetary to the original and the others phi degrees away from the original and complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio and is approximately 36 degrees.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -457,7 +457,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-equi-tetrad
 
 **Method:** GET  
-**Description:**  
+**Description:** A four-color palette on an HSL color wheel where three colors, at 90, 180, and 270 degrees away from the original are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -475,7 +475,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-mono-scale
 
 **Method:** GET  
-**Description:**  
+**Description:** A five-color palette on an HSL color wheel where four colors, all the same hue and saturation, but varying in lightness in steps of 10% are chosen to go with the original color. The original color always falls in the palette, but where, depends on it lightness.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -493,7 +493,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-interpolate
 
 **Method:** GET  
-**Description:**  
+**Description:** A nine-color palette where seven colors are evenly stepped in their red, green, and blue componenets from two given colors used as beginning and end.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r1 - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g1 - string (query)  

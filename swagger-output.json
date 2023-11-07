@@ -31,9 +31,6 @@
     "/gopher/rgb-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -67,9 +64,6 @@
     "/gopher/hsv-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -103,9 +97,6 @@
     "/gopher/hsl-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -139,9 +130,6 @@
     "/gopher/cmyk-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "c",
@@ -182,9 +170,6 @@
     "/gopher/hex-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -204,9 +189,6 @@
     "/gopher/name-to-all": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",
@@ -226,9 +208,6 @@
     "/gopher/palette-complement": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -262,9 +241,6 @@
     "/gopher/palette-split-complement": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -298,9 +274,6 @@
     "/gopher/palette-adjacent": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -334,9 +307,6 @@
     "/gopher/palette-analagous": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -370,9 +340,6 @@
     "/gopher/palette-phi-triad": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -406,9 +373,6 @@
     "/gopher/palette-equi-triad": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -442,9 +406,6 @@
     "/gopher/palette-phi-tetrad": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -478,9 +439,6 @@
     "/gopher/palette-equi-tetrad": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -514,9 +472,6 @@
     "/gopher/palette-mono-scale": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -550,9 +505,6 @@
     "/gopher/palette-interpolate": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r1",
@@ -607,9 +559,6 @@
     "/gopher/rgb-to-hsv": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -643,9 +592,6 @@
     "/gopher/hsv-to-rgb": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -679,9 +625,6 @@
     "/gopher/rgb-to-cmyk": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -715,9 +658,6 @@
     "/gopher/cmyk-to-rgb": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "c",
@@ -758,9 +698,6 @@
     "/gopher/rgb-to-hsl": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -794,9 +731,6 @@
     "/gopher/hsl-to-rgb": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -830,9 +764,6 @@
     "/gopher/rgb-to-hex": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "r",
@@ -866,9 +797,6 @@
     "/gopher/hex-to-rgb": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -888,9 +816,6 @@
     "/gopher/hsv-to-hsl": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -924,9 +849,6 @@
     "/gopher/hsl-to-hsv": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -960,9 +882,6 @@
     "/gopher/hsl-to-cmyk": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -996,9 +915,6 @@
     "/gopher/cmyk-to-hsl": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "c",
@@ -1039,9 +955,6 @@
     "/gopher/hsv-to-cmyk": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -1075,9 +988,6 @@
     "/gopher/cmyk-to-hsv": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "c",
@@ -1118,9 +1028,6 @@
     "/gopher/hsv-to-hex": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -1154,9 +1061,6 @@
     "/gopher/hex-to-hsv": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -1176,9 +1080,6 @@
     "/gopher/hsl-to-hex": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "h",
@@ -1212,9 +1113,6 @@
     "/gopher/hex-to-hsl": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -1234,9 +1132,6 @@
     "/gopher/cmyk-to-hex": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "c",
@@ -1277,9 +1172,6 @@
     "/gopher/hex-to-cmyk": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -1299,9 +1191,6 @@
     "/gopher/name-to-hex": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",
@@ -1321,9 +1210,6 @@
     "/gopher/hex-to-name": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "hex",
@@ -1343,9 +1229,6 @@
     "/gopher/name-to-rgb": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",
@@ -1365,9 +1248,6 @@
     "/gopher/name-to-hsv": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",
@@ -1387,9 +1267,6 @@
     "/gopher/name-to-hsl": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",
@@ -1409,9 +1286,6 @@
     "/gopher/name-to-cmyk": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "name",

@@ -61,22 +61,22 @@ export function getAdjacentPalette(RGB) {
   return obj;
 }
 
-export function getAnalagousPalette(RGB) {
+export function getAnalogousPalette(RGB) {
   let HSL = rgbToHsl(RGB);
   let originalAngle = HSL.h;
-  let split1 = originalAngle - 30;
+  let split1 = originalAngle - 20;
   if (split1 > 360) {
     split1 >= split1 - 360;
   }
-  let split2 = originalAngle - 45;
+  let split2 = originalAngle - 40;
   if (split2 > 360) {
     split2 >= split2 - 360;
   }
-  let split3 = originalAngle + 30;
+  let split3 = originalAngle + 20;
   if (split3 > 360) {
     split3 >= split3 - 360;
   }
-  let split4 = originalAngle + 45;
+  let split4 = originalAngle + 40;
   if (split4 > 360) {
     split4 >= split4 - 360;
   }
