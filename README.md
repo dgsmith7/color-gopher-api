@@ -102,27 +102,27 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 90,
-        "g": 106,
-        "b": 250
+        "r": 30,
+        "g": 86,
+        "b": 62
       },
       "HSV": {
-        "h": 234,
-        "s": 64,
-        "v": 98
+        "h": 154,
+        "s": 65,
+        "v": 34
       },
       "HSL": {
-        "h": 234,
-        "s": 94.1,
-        "l": 66.7
+        "h": 154,
+        "s": 48,
+        "l": 23
       },
       "CMYK": {
-        "c": 64,
-        "m": 58,
-        "y": 0,
-        "k": 2
+        "c": 65,
+        "m": 0,
+        "y": 27,
+        "k": 66
       },
-      "HEX": "#5a6afa",
+      "HEX": "#1e563e",
       "NAME": null
     }
   }
@@ -152,28 +152,28 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 0,
-        "g": 0,
-        "b": 0
+        "r": 30,
+        "g": 143,
+        "b": 94
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 153,
+        "s": 79,
+        "v": 56
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 153,
+        "s": 65,
+        "l": 34
       },
       "CMYK": {
-        "c": 0,
+        "c": 79,
         "m": 0,
-        "y": 0,
-        "k": 100
+        "y": 34,
+        "k": 43
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#1e8f5e",
+      "NAME": null
     }
   }
 }
@@ -203,28 +203,28 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 0,
-        "g": 0,
-        "b": 0
+        "r": 11,
+        "g": 4,
+        "b": 15
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 278,
+        "s": 73,
+        "v": 6
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 278,
+        "s": 58,
+        "l": 4
       },
       "CMYK": {
-        "c": 0,
-        "m": 0,
+        "c": 26,
+        "m": 73,
         "y": 0,
-        "k": 100
+        "k": 94
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#0b040f",
+      "NAME": null
     }
   }
 }
@@ -253,26 +253,26 @@ This API is available on RapidAPI at color-gopher-api.
       "RGB": {
         "r": 0,
         "g": 0,
-        "b": 0
+        "b": 255
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 240,
+        "s": 100,
+        "v": 100
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 240,
+        "s": 100,
+        "l": 50
       },
       "CMYK": {
-        "c": 0,
-        "m": 0,
+        "c": 100,
+        "m": 100,
         "y": 0,
-        "k": 100
+        "k": 0
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#0000ff",
+      "NAME": "blue"
     }
   }
 }
@@ -299,28 +299,28 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 0,
-        "g": 0,
-        "b": 0
+        "r": 240,
+        "g": 248,
+        "b": 255
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 208,
+        "s": 6,
+        "v": 100
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 208,
+        "s": 100,
+        "l": 97
       },
       "CMYK": {
-        "c": 0,
-        "m": 0,
+        "c": 5,
+        "m": 2,
         "y": 0,
-        "k": 100
+        "k": 0
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#f0f8ff",
+      "NAME": "aliceblue"
     }
   }
 }
@@ -509,16 +509,16 @@ This API is available on RapidAPI at color-gopher-api.
 
 **Response Body:**
 
-<hr>
+<!-- <hr>
 
 ### Endpoint: /gopher/rgb-to-hsv
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
 **Responses:**
 
 ```
@@ -531,12 +531,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsv-to-rgb
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
 **Responses:**
 
 ```
@@ -549,12 +549,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/rgb-to-cmyk
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
 **Responses:**
 
 ```
@@ -567,13 +567,13 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/cmyk-to-rgb
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
 **Responses:**
 
 ```
@@ -586,12 +586,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/rgb-to-hsl
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
 **Responses:**
 
 ```
@@ -604,12 +604,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsl-to-rgb
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
 **Responses:**
 
 ```
@@ -622,12 +622,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/rgb-to-hex
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
 **Responses:**
 
 ```
@@ -640,10 +640,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hex-to-rgb
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**
 
 ```
@@ -656,12 +656,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsv-to-hsl
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
 **Responses:**
 
 ```
@@ -674,12 +674,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsl-to-hsv
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
 **Responses:**
 
 ```
@@ -692,12 +692,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsl-to-cmyk
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
 **Responses:**
 
 ```
@@ -710,13 +710,13 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/cmyk-to-hsl
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
 **Responses:**
 
 ```
@@ -729,12 +729,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsv-to-cmyk
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
 **Responses:**
 
 ```
@@ -747,13 +747,13 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/cmyk-to-hsv
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
 **Responses:**
 
 ```
@@ -766,12 +766,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsv-to-hex
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
 **Responses:**
 
 ```
@@ -784,10 +784,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hex-to-hsv
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**
 
 ```
@@ -800,12 +800,12 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hsl-to-hex
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
 **Responses:**
 
 ```
@@ -818,10 +818,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hex-to-hsl
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**
 
 ```
@@ -834,13 +834,13 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/cmyk-to-hex
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
+&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
 **Responses:**
 
 ```
@@ -853,10 +853,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hex-to-cmyk
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**
 
 ```
@@ -869,10 +869,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/name-to-hex
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**
 
 ```
@@ -885,10 +885,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/hex-to-name
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**
 
 ```
@@ -901,10 +901,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/name-to-rgb
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**
 
 ```
@@ -917,10 +917,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/name-to-hsv
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**
 
 ```
@@ -933,10 +933,10 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/name-to-hsl
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**
 
 ```
@@ -949,17 +949,17 @@ This API is available on RapidAPI at color-gopher-api.
 
 ### Endpoint: /gopher/name-to-cmyk
 
-**Method:** GET  
-**Description:**  
-**Parameters:**  
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
+**Method:** GET
+**Description:**
+**Parameters:**
+&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**
 
 ```
 200-OK
 ```
 
-**Response Body:**
+**Response Body:** -->
 
 ## Code Examples:
 

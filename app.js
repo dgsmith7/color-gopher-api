@@ -1,9 +1,15 @@
 import express from "express";
 import cors from "cors";
 import * as swaggerUi from "swagger-ui-express";
-import swaggerFile from "./swagger-output.json" assert { type: "json" };
-import { router } from "./routes/gopher.js";
 
+import { router } from "./routes/gopher.js";
+import { readFile } from "fs/promises";
+
+// Parse JSON file because you cont import with ECMA6
+// import swaggerFile from "./swagger-output.json";
+const swaggerFile = JSON.parse(
+  await readFile(new URL("./swagger-output.json", import.meta.url))
+);
 const app = express();
 
 //middleware

@@ -99,8 +99,9 @@ export function hexToAll(hex) {
 }
 
 export function nameToAll(name) {
-  let regex = new RegExp(/^[a-z]$/);
-  if (regex.test(name.toLowerCase()) == false) {
+  let regex = new RegExp(/^[a-zA-Z]+$/);
+  name = name.toLowerCase();
+  if (regex.test(name) == false) {
     return null;
   } else {
     let hex = nameToHexTable.get(name);
@@ -282,70 +283,70 @@ export function hexToRgb(hex) {
   }
 }
 
-export function hsvToHsl(hsv) {
-  return rgbToHsl(hsvToRgb(hsv));
-}
+// export function hsvToHsl(hsv) {
+//   return rgbToHsl(hsvToRgb(hsv));
+// }
 
-export function hslToHsv(hsl) {
-  return rgbToHsv(hslToRgb(hsl));
-}
+// export function hslToHsv(hsl) {
+//   return rgbToHsv(hslToRgb(hsl));
+// }
 
-export function hslToCmyk(hsl) {
-  return rgbToCmyk(hslToRgb(hsl));
-}
+// export function hslToCmyk(hsl) {
+//   return rgbToCmyk(hslToRgb(hsl));
+// }
 
-export function cmykToHsl(cmyk) {
-  return rgbToHsl(cmykToRgb(cmyk));
-}
+// export function cmykToHsl(cmyk) {
+//   return rgbToHsl(cmykToRgb(cmyk));
+// }
 
-export function hsvToCmyk(hsv) {
-  return rgbToCmyk(hsvToRgb(hsv));
-}
+// export function hsvToCmyk(hsv) {
+//   return rgbToCmyk(hsvToRgb(hsv));
+// }
 
-export function cmykToHsv(cmyk) {
-  return rgbToHsv(cmykToRgb(cmyk));
-}
+// export function cmykToHsv(cmyk) {
+//   return rgbToHsv(cmykToRgb(cmyk));
+// }
 
-export function hsvToHex(hsv) {
-  return rgbToHex(hsvToRgb(hsv));
-}
+// export function hsvToHex(hsv) {
+//   return rgbToHex(hsvToRgb(hsv));
+// }
 
-export function hexToHsv(hex) {
-  return rgbToHsv(hexToRgb(hex));
-}
+// export function hexToHsv(hex) {
+//   return rgbToHsv(hexToRgb(hex));
+// }
 
-export function hslToHex(hsl) {
-  return rgbToHex(hslToRgb(hsl));
-}
+// export function hslToHex(hsl) {
+//   return rgbToHex(hslToRgb(hsl));
+// }
 
-export function hexToHsl(hex) {
-  return rgbToHsl(hexToRgb(hex));
-}
+// export function hexToHsl(hex) {
+//   return rgbToHsl(hexToRgb(hex));
+// }
 
-export function cmykToHex(cmyk) {
-  return rgbToHex(cmykToRgb(cmyk));
-}
+// export function cmykToHex(cmyk) {
+//   return rgbToHex(cmykToRgb(cmyk));
+// }
 
-export function hexToCmyk(hex) {
-  return rgbToCmyk(hexToRgb(hex));
-}
+// export function hexToCmyk(hex) {
+//   return rgbToCmyk(hexToRgb(hex));
+// }
 
-export function nameToHex(name) {
-  name = name.toLowerCase();
-  if (nameToHexTable.has(name)) {
-    return nameToHexTable.get(name);
-  } else {
-    return null;
-  }
-}
+// export function nameToHex(name) {
+//   name = name.toLowerCase();
+//   if (nameToHexTable.has(name)) {
+//     return nameToHexTable.get(name);
+//   } else {
+//     return null;
+//   }
+// }
 
-export function hexToName(hex) {
-  if (hexToNameTable.has(hex)) {
-    return hexToNameTable.get(hex);
-  } else {
-    return null;
-  }
-}
+// export function hexToName(hex) {
+//   if (hexToNameTable.has(hex)) {
+//     return hexToNameTable.get(hex);
+//   } else {
+//     return null;
+//   }
+// }
 
 export function nameToRgb(name) {
   if (nameToHex(name) != null) {
@@ -355,29 +356,29 @@ export function nameToRgb(name) {
   }
 }
 
-export function nameToHsv(name) {
-  if (nameToHex(name) != null) {
-    return rgbToHsv(nameToRgb(name));
-  } else {
-    return null;
-  }
-}
+// export function nameToHsv(name) {
+//   if (nameToHex(name) != null) {
+//     return rgbToHsv(nameToRgb(name));
+//   } else {
+//     return null;
+//   }
+// }
 
-export function nameToHsl(name) {
-  if (nameToHex(name) != null) {
-    return rgbToHsl(nameToRgb(name));
-  } else {
-    return null;
-  }
-}
+// export function nameToHsl(name) {
+//   if (nameToHex(name) != null) {
+//     return rgbToHsl(nameToRgb(name));
+//   } else {
+//     return null;
+//   }
+// }
 
-export function nameToCmyk(name) {
-  if (nameToHex(name) != null) {
-    return rgbToCmyk(nameToRgb(name));
-  } else {
-    return null;
-  }
-}
+// export function nameToCmyk(name) {
+//   if (nameToHex(name) != null) {
+//     return rgbToCmyk(nameToRgb(name));
+//   } else {
+//     return null;
+//   }
+// }
 
 export function constrain(lowerLim, upperLim, val) {
   if (val < lowerLim) {
