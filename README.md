@@ -1,15 +1,14 @@
 # color-gopher-api
 
-##Introduction:
+## Introduction:
 
 Color Gopher API is a REST API that converts colors and generates on-demand palettes. Color Gopher can sniff out the color conversions you need or retireve palettes on request. Users can ask the Color Gopher to convert between RGB, HSV, HSL, CMYK, HEX, and CSS-named-colors. This can be done one at a time, or all at once in a single request. The Color Gopher can also generate palettes based on the input color. Those palettes are: Complement, Split complement, Adjacent, Analogous, Phi (golden angle) triad, Equilateral triad, Phi (golden angle) tetrad, Equlateral tetrad, Monochromatic, Interpolation in 7 steps between two colors. Let Color Gopher GET you the info you need for your next project!
 
-##Getting Started:
+## Getting Started:
+
 This API is available on RapidAPI at color-gopher-api.
 
-##API Reference:
-Color Gopher API
-1.0.0
+## API Reference: Color Gopher API 1.0.0
 
 **Endpoint:** /
 **Method:** GET
@@ -495,19 +494,18 @@ Responses:
 200 - OK
 Response Body:
 
-##Code Examples:
+## Code Examples:
+
 CURL:
 
-```
-curl -X 'GET' \
+```curl -X 'GET' \
  'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
  -H 'accept: _/_'
 ```
 
 JS:
 
-```
-fetch('http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0', {
+```fetch('http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0', {
 headers: {
 'accept': '_/_'
 }
@@ -538,7 +536,7 @@ $response = curl_exec($ch);
 
 curl_close($ch);
 
-##Glossary:
+## Glossary:
 Adjacent Palette
 Analogous Palette
 Complementary Palette
