@@ -1014,19 +1014,34 @@ curl_close($ch);
 
 ## Glossary:
 
-**Adjacent Palette** - A three-color palette on an HSL color wheel where two colors, one 35 degrees away in each direction are chosen to go with the original color.  
+**Adjacent Palette** - A three-color palette on an HSL color wheel where two colors, one 35 degrees away in each direction are chosen to go with the original color.
+
 **Analogous Palette** - A five-color palette on an HSL color wheel where four colors, which are 20 and 40 degrees away in each direction are chosen to go with the original color.
-**Complementary Palette** - A two-color palette on an HSL color wheel where a color 180 degrees away from the original color is chosen to go with the original color.  
-**CSS named color** - Official CSS color names found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color)  
-**CMYK** - Cyan, Magenta, Yellow, and Black. A color system often associated with printing.  
-**Equilateral Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, at 90, 180, and 270 degrees away from the original are chosen to go with the original color.  
-**Equilateral Triad Palette** - A three-color palette on an HSL color wheel where two colors, at 120 and 240 degrees away from the original are chosen to go with the original color.  
-**HEX** - A Hexidecimal (base16) string used to represent RGB color, often used in CSS and elsewhere. The string opens with a hashtag and is followed by a two-place hexidecimal representation of each element (red, green, and blue) in an RGB color, such as "#ff68e2".  
-**HSL** - Hue, Saturation, Lightness. A color system that represents colors with three characteristics. Of note is the subtle but important difference between "lightness" and "value", which is used in the HSV color system in lieu of "lightness".  
-**HSV** - Hue, Saturation, Value. A color system that represents colors with three characteristics. Of note is the subtle but important difference between "value" and "lightness", which is used in the HSL color system in lieu of "value".  
-**Interpolation** - A nine-color palette where seven colors are evenly stepped in their red, green, and blue componenets from two given colors used as beginning and end.  
-**Monochromatic Palette** - A five-color palette on an HSL color wheel where four colors, all the same hue and saturation, but varying in lightness in steps of 10% are chosen to go with the original color. The original color always falls in the palette, but where, depends on it lightness.  
-**Phi Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, one complenetary to the original and the others phi degrees away from the original and complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio and is approximately 36 degrees.  
-**Phi Triad Palette** - A three-color palette on an HSL color wheel where two colors, each phi degrees away from the original's complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio, and is approximately 36 degrees.  
+
+**Complementary Palette** - A two-color palette on an HSL color wheel where a color 180 degrees away from the original color is chosen to go with the original color.
+
+**CSS named color** - Official CSS color names found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color).
+
+**CMYK** - Cyan, Magenta, Yellow, and Black. A color system often associated with printing.
+
+**Equilateral Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, at 90, 180, and 270 degrees away from the original are chosen to go with the original color.
+
+**Equilateral Triad Palette** - A three-color palette on an HSL color wheel where two colors, at 120 and 240 degrees away from the original are chosen to go with the original color.
+
+**HEX** - A Hexidecimal (base16) string used to represent RGB color, often used in CSS and elsewhere. The string opens with a hashtag and is followed by a two-place hexidecimal representation of each element (red, green, and blue) in an RGB color, such as "#ff68e2".
+
+**HSL** - Hue, Saturation, Lightness. A color system that represents colors with three characteristics. Of note is the subtle but important difference between "lightness" and "value", which is used in the HSV color system in lieu of "lightness".
+
+**HSV** - Hue, Saturation, Value. A color system that represents colors with three characteristics. Of note is the subtle but important difference between "value" and "lightness", which is used in the HSL color system in lieu of "value".
+
+**Interpolation** - A nine-color palette where seven colors are evenly stepped in their red, green, and blue componenets from two given colors used as beginning and end.
+
+**Monochromatic Palette** - A five-color palette on an HSL color wheel where four colors, all the same hue and saturation, but varying in lightness in steps of 10% are chosen to go with the original color. The original color always falls in the palette, but where, depends on it lightness.
+
+**Phi Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, one complenetary to the original and the others phi degrees away from the original and complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio and is approximately 36 degrees.
+
+**Phi Triad Palette** - A three-color palette on an HSL color wheel where two colors, each phi degrees away from the original's complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio, and is approximately 36 degrees.
+
 **RGB** - Red, Green, Blue. This quite common additive color system is used to represent colors with three charactistics based on the amount of red, green, and blue that comprise the final color.
+
 **Split Complemenetary Palette** - A palette on an HSL color wheel where two color, one 35 degrees away in each direction are chosen to go with the original color.
