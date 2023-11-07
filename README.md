@@ -34,7 +34,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/rgb-to-all
 
 **Method:** GET  
-**Description:** Converts an RGB to every other type in this API.  
+**Description:** Converts an RGB to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -84,7 +84,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsv-to-all
 
 **Method:** GET  
-**Description:** Converts an HSV to every other type in this API.  
+**Description:** Converts an HSV to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -134,7 +134,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsl-to-all
 
 **Method:** GET  
-**Description:** Converts an HSL to every other type in this API.  
+**Description:** Converts an HSL to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -184,7 +184,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/cmyk-to-all
 
 **Method:** GET  
-**Description:** Converts a CMYK to every other type in this API.  
+**Description:** Converts a CMYK to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
@@ -235,7 +235,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hex-to-all
 
 **Method:** GET  
-**Description:** Converts a HEX to every other type in this API.  
+**Description:** Converts a HEX to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
 **Responses:**
@@ -283,7 +283,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/name-to-all
 
 **Method:** GET  
-**Description:** Converts a valid CSS-named-color to every other type in this API. Returns null if name is invalid.
+**Description:** Converts a valid CSS-named-color to every type in this API. Returns null if name is invalid. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
 **Responses:**
@@ -347,30 +347,17 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "original": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "color1": {
+        "r": 0,
+        "g": 255,
         "b": 255
-      },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
-      },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      }
     }
   }
 }
@@ -381,7 +368,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/palette-split-complement
 
 **Method:** GET  
-**Description:** A palette on an HSL color wheel where two color, one 35 degrees away in each direction are chosen to go with the original color.  
+**Description:** A four-color palette on an HSL color wheel where three colors, the complement, and one 35 degrees away on each side of the complement are chosen to go with the original color.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -397,30 +384,27 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "original": {
+        "r": 0,
+        "g": 255,
+        "b": 0
+      },
+      "color1": {
+        "r": 0,
+        "g": 255,
+        "b": 127
+      },
+      "color2": {
+        "r": 127,
+        "g": 0,
         "b": 255
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
-      },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color3": {
+        "r": 255,
+        "g": 0,
+        "b": 255
+      }
     }
   }
 }
@@ -447,30 +431,22 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
-        "b": 255
+    "palette": {
+      "color1": {
+        "r": 50,
+        "g": 255,
+        "b": 95
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "original": {
+        "r": 125,
+        "g": 255,
+        "b": 50
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color2": {
+        "r": 244,
+        "g": 255,
+        "b": 50
+      }
     }
   }
 }
@@ -497,30 +473,32 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
-        "b": 255
+    "palette": {
+      "color1": {
+        "r": 188,
+        "g": 255,
+        "b": 66
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color2": {
+        "r": 251,
+        "g": 255,
+        "b": 66
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
+      "original": {
+        "r": 125,
+        "g": 255,
+        "b": 65
       },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
+      "color3": {
+        "r": 66,
+        "g": 255,
+        "b": 69
       },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color4": {
+        "r": 66,
+        "g": 255,
+        "b": 132
+      }
     }
   }
 }
@@ -547,30 +525,22 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
-        "b": 255
+    "palette": {
+      "color1": {
+        "r": 125,
+        "g": 63,
+        "b": 63
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color2": {
+        "r": 63,
+        "g": 125,
+        "b": 100
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color3": {
+        "r": 100,
+        "g": 125,
+        "b": 63
+      }
     }
   }
 }
@@ -597,30 +567,22 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
-        "b": 255
+    "palette": {
+      "original": {
+        "r": 125,
+        "g": 63,
+        "b": 125
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color1": {
+        "r": 125,
+        "g": 125,
+        "b": 63
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color2": {
+        "r": 63,
+        "g": 125,
+        "b": 125
+      }
     }
   }
 }
@@ -647,30 +609,27 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "original": {
+        "r": 125,
+        "g": 63,
         "b": 255
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color1": {
+        "r": 238,
+        "g": 61,
+        "b": 255
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
+      "color2": {
+        "r": 255,
+        "g": 61,
+        "b": 64
       },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color3": {
+        "r": 255,
+        "g": 200,
+        "b": 61
+      }
     }
   }
 }
@@ -697,30 +656,27 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "original": {
+        "r": 63,
+        "g": 255,
+        "b": 63
+      },
+      "color1": {
+        "r": 61,
+        "g": 158,
         "b": 255
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color2": {
+        "r": 255,
+        "g": 61,
+        "b": 255
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
-      },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
-      },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color3": {
+        "r": 255,
+        "g": 61,
+        "b": 64
+      }
     }
   }
 }
@@ -747,30 +703,32 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "original": {
+        "r": 63,
+        "g": 125,
         "b": 255
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color1": {
+        "r": 112,
+        "g": 159,
+        "b": 255
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
+      "color2": {
+        "r": 163,
+        "g": 193,
+        "b": 255
       },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
+      "color3": {
+        "r": 214,
+        "g": 227,
+        "b": 255
       },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "color4": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      }
     }
   }
 }
@@ -800,486 +758,56 @@ This API is available on RapidAPI at color-gopher-api.
 ```{
   "status": "success",
   "data": {
-    "ALL": {
-      "RGB": {
-        "r": 240,
-        "g": 248,
+    "palette": {
+      "front": {
+        "r": 0,
+        "g": 255,
+        "b": 0
+      },
+      "color1": {
+        "r": 0,
+        "g": 255,
+        "b": 63
+      },
+      "color2": {
+        "r": 0,
+        "g": 255,
+        "b": 127
+      },
+      "color3": {
+        "r": 0,
+        "g": 255,
+        "b": 191
+      },
+      "color4": {
+        "r": 0,
+        "g": 255,
         "b": 255
       },
-      "HSV": {
-        "h": 208,
-        "s": 6,
-        "v": 100
+      "color5": {
+        "r": 0,
+        "g": 191,
+        "b": 255
       },
-      "HSL": {
-        "h": 208,
-        "s": 100,
-        "l": 97
+      "color6": {
+        "r": 0,
+        "g": 127,
+        "b": 255
       },
-      "CMYK": {
-        "c": 5,
-        "m": 2,
-        "y": 0,
-        "k": 0
+      "color7": {
+        "r": 0,
+        "g": 63,
+        "b": 255
       },
-      "HEX": "#f0f8ff",
-      "NAME": "aliceblue"
+      "end": {
+        "r": 0,
+        "g": 0,
+        "b": 255
+      }
     }
   }
 }
 ```
-
-<!-- <hr>
-
-### Endpoint: /gopher/rgb-to-hsv
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsv-to-rgb
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/rgb-to-cmyk
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/cmyk-to-rgb
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/rgb-to-hsl
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsl-to-rgb
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/rgb-to-hex
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;b - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hex-to-rgb
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsv-to-hsl
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsl-to-hsv
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsl-to-cmyk
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/cmyk-to-hsl
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsv-to-cmyk
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/cmyk-to-hsv
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsv-to-hex
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hex-to-hsv
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hsl-to-hex
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hex-to-hsl
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/cmyk-to-hex
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;y - string (query)
-&nbsp;&nbsp;&nbsp;&nbsp;k - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hex-to-cmyk
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/name-to-hex
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/hex-to-name
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/name-to-rgb
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/name-to-hsv
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/name-to-hsl
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:**
-
-<hr>
-
-### Endpoint: /gopher/name-to-cmyk
-
-**Method:** GET
-**Description:**
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
-**Responses:**
-
-```
-200-OK
-```
-
-**Response Body:** -->
 
 ## Code Examples:
 
@@ -1364,4 +892,4 @@ curl_close($ch);
 
 **RGB** - Red, Green, Blue. This quite common additive color system is used to represent colors with three charactistics based on the amount of red, green, and blue that comprise the final color.
 
-**Split Complemenetary Palette** - A palette on an HSL color wheel where two color, one 35 degrees away in each direction are chosen to go with the original color.
+**Split Complemenetary Palette** - A four-color palette on an HSL color wheel where three colors, the complement, and one 35 degrees away on each side of the complement are chosen to go with the original color.
