@@ -52,28 +52,28 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 0,
+        "r": 255,
         "g": 0,
         "b": 0
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 0,
+        "s": 100,
+        "v": 100
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 0,
+        "s": 100,
+        "l": 50
       },
       "CMYK": {
         "c": 0,
-        "m": 0,
-        "y": 0,
-        "k": 100
+        "m": 100,
+        "y": 100,
+        "k": 0
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#ff0000",
+      "NAME": "red"
     }
   }
 }
@@ -102,28 +102,28 @@ This API is available on RapidAPI at color-gopher-api.
   "data": {
     "ALL": {
       "RGB": {
-        "r": 0,
-        "g": 0,
-        "b": 0
+        "r": 90,
+        "g": 106,
+        "b": 250
       },
       "HSV": {
-        "h": 255,
-        "s": 0,
-        "v": 0
+        "h": 234,
+        "s": 64,
+        "v": 98
       },
       "HSL": {
-        "h": null,
-        "s": null,
-        "v": null
+        "h": 234,
+        "s": 94.1,
+        "l": 66.7
       },
       "CMYK": {
-        "c": 0,
-        "m": 0,
+        "c": 64,
+        "m": 58,
         "y": 0,
-        "k": 100
+        "k": 2
       },
-      "HEX": "#000000",
-      "NAME": "black"
+      "HEX": "#5a6afa",
+      "NAME": null
     }
   }
 }

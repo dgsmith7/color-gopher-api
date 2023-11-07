@@ -1,6 +1,125 @@
 "use strict";
 import { hexToNameTable, nameToHexTable } from "./webColors.js";
 
+export function rgbToAll(rgb) {
+  let r = constrain(0, 255, rgb.r);
+  let g = constrain(0, 255, rgb.g);
+  let b = constrain(0, 255, rgb.b);
+  let newRgb = { r: r, g: g, b: b };
+  let hsv = rgbToHsv(rgb);
+  let hsl = rgbToHsl(rgb);
+  let cmyk = rgbToCmyk(rgb);
+  let hex = rgbToHex(rgb);
+  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
+  let obj = {
+    RGB: { r: newRgb.r, g: newRgb.g, b: newRgb.b },
+    HSV: hsv,
+    HSL: hsl,
+    CMYK: cmyk,
+    HEX: hex,
+    NAME: name,
+  };
+  return obj;
+}
+
+export function hsvToAll(hsv) {
+  let rgb = hsvToRgb(hsv);
+  let newHsv = rgbToHsv(rgb);
+  let hsl = rgbToHsl(rgb);
+  let cmyk = rgbToCmyk(rgb);
+  let hex = rgbToHex(rgb);
+  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
+  let obj = {
+    RGB: rgb,
+    HSV: { h: newHsv.h, s: newHsv.s, v: newHsv.v },
+    HSL: hsl,
+    CMYK: cmyk,
+    HEX: hex,
+    NAME: name,
+  };
+  return obj;
+}
+
+export function hslToAll(hsl) {
+  let rgb = hslToRgb(hsl);
+  let hsv = rgbToHsv(rgb);
+  let newHsl = rgbToHsl(rgb);
+  let cmyk = rgbToCmyk(rgb);
+  let hex = rgbToHex(rgb);
+  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
+  let obj = {
+    RGB: rgb,
+    HSV: hsv,
+    HSL: { h: newHsl.h, s: newHsl.s, l: newHsl.l },
+    CMYK: cmyk,
+    HEX: hex,
+    NAME: name,
+  };
+  return obj;
+}
+
+export function cmykToAll(cmyk) {
+  let rgb = cmykToRgb(cmyk);
+  let hsv = rgbToHsv(rgb);
+  let hsl = rgbToHsl(rgb);
+  let newCmyk = rgbToCmyk(rgb);
+  let hex = rgbToHex(rgb);
+  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
+  let obj = {
+    RGB: rgb,
+    HSV: hsv,
+    HSL: hsl,
+    CMYK: { c: newCmyk.c, m: newCmyk.m, y: newCmyk.y, k: newCmyk.k },
+    HEX: hex,
+    NAME: name,
+  };
+  return obj;
+}
+
+export function hexToAll(hex) {
+  let regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
+  if (regex.test(hex) == false) {
+    return null;
+  } else {
+    let rgb = hexToRgb(hex);
+    let hsv = rgbToHsv(rgb);
+    let hsl = rgbToHsl(rgb);
+    let cmyk = rgbToCmyk(rgb);
+    let name = hexToNameTable.get(rgbToHex(rgb)) || null;
+    let obj = {
+      RGB: rgb,
+      HSV: hsv,
+      HSL: hsl,
+      CMYK: cmyk,
+      HEX: hex,
+      NAME: name,
+    };
+    return obj;
+  }
+}
+
+export function nameToAll(name) {
+  let regex = new RegExp(/^[a-z]$/);
+  if (regex.test(name.toLowerCase()) == false) {
+    return null;
+  } else {
+    let hex = nameToHexTable.get(name);
+    let rgb = hexToRgb(hex);
+    let hsv = rgbToHsv(rgb);
+    let hsl = rgbToHsl(rgb);
+    let cmyk = rgbToCmyk(rgb);
+    let obj = {
+      RGB: rgb,
+      HSV: hsv,
+      HSL: hsl,
+      CMYK: cmyk,
+      HEX: hex,
+      NAME: name,
+    };
+    return obj;
+  }
+}
+
 export function rgbToHsv(rgb) {
   let r = constrain(0, 255, rgb.r) / 255;
   let g = constrain(0, 255, rgb.g) / 255;
@@ -25,9 +144,9 @@ export function rgbToHsv(rgb) {
     s = delta / cMax;
   }
   return {
-    h: Math.ceil(h),
-    s: parseFloat((s * 100).toFixed(1)),
-    v: parseFloat((cMax * 100).toFixed(1)),
+    h: Math.floor(h),
+    s: parseFloat((s * 100).toFixed(0)),
+    v: parseFloat((cMax * 100).toFixed(0)),
   };
 }
 
@@ -52,7 +171,7 @@ export function hsvToRgb(hsv) {
   } else if (h >= 300 && h < 360) {
     rgb = { r: (c + m) * 255, g: (0 + m) * 255, b: (x + m) * 255 };
   }
-  return { r: Math.ceil(rgb.r), g: Math.ceil(rgb.g), b: Math.ceil(rgb.b) };
+  return { r: Math.floor(rgb.r), g: Math.floor(rgb.g), b: Math.floor(rgb.b) };
 }
 
 export function rgbToCmyk(rgb) {
@@ -64,10 +183,10 @@ export function rgbToCmyk(rgb) {
   let m = (1 - g - k) / (1 - k) || 0;
   let y = (1 - b - k) / (1 - k) || 0;
   return {
-    c: Math.ceil(c * 100),
-    m: Math.ceil(m * 100),
-    y: Math.ceil(y * 100),
-    k: Math.ceil(k * 100),
+    c: Math.floor(c * 100),
+    m: Math.floor(m * 100),
+    y: Math.floor(y * 100),
+    k: Math.floor(k * 100),
   };
 }
 
@@ -79,7 +198,7 @@ export function cmykToRgb(cmyk) {
   let r = 255 * (1 - c) * (1 - k);
   let g = 255 * (1 - m) * (1 - k);
   let b = 255 * (1 - y) * (1 - k);
-  return { r: Math.ceil(r), g: Math.ceil(g), b: Math.ceil(b) };
+  return { r: Math.floor(r), g: Math.floor(g), b: Math.floor(b) };
 }
 
 export function rgbToHsl(rgb) {
@@ -107,9 +226,9 @@ export function rgbToHsl(rgb) {
     s = delta / (1 - Math.abs(l * 2 - 1));
   }
   return {
-    h: Math.ceil(h),
-    s: parseFloat((s * 100).toFixed(1)),
-    l: parseFloat((l * 100).toFixed(1)),
+    h: Math.floor(h),
+    s: parseFloat((s * 100).toFixed(0)),
+    l: parseFloat((l * 100).toFixed(0)),
   };
 }
 
@@ -134,7 +253,7 @@ export function hslToRgb(hsl) {
   } else if (h >= 300 && h < 360) {
     rgb = { r: (c + m) * 255, g: (0 + m) * 255, b: (x + m) * 255 };
   }
-  return { r: Math.ceil(rgb.r), g: Math.ceil(rgb.g), b: Math.ceil(rgb.b) };
+  return { r: Math.floor(rgb.r), g: Math.floor(rgb.g), b: Math.floor(rgb.b) };
 }
 
 export function rgbToHex(rgb) {
@@ -260,117 +379,6 @@ export function nameToCmyk(name) {
   }
 }
 
-export function rgbToAll(rgb) {
-  let hsv = rgbToHsv(rgb);
-  let hsl = rgbToHsl(rgb);
-  let cmyk = rgbToCmyk(rgb);
-  let hex = rgbToHex(rgb);
-  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
-  let obj = {
-    RGB: { r: rgb.r, g: rgb.g, b: rgb.b },
-    HSV: hsv,
-    HSL: hsl,
-    CMYK: cmyk,
-    HEX: hex,
-    NAME: name,
-  };
-  return obj;
-}
-
-export function hsvToAll(hsv) {
-  let rgb = hsvToRgb(hsv);
-  let hsl = hsvToHsl(hsv);
-  let cmyk = hsvToCmyk(hsv);
-  let hex = hsvToHex(hsv);
-  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
-  let obj = {
-    RGB: rgb,
-    HSV: { h: hsv.h, s: hsv.s, v: hsv.v },
-    HSL: hsl,
-    CMYK: cmyk,
-    HEX: hex,
-    NAME: name,
-  };
-  return obj;
-}
-
-export function hslToAll(hsl) {
-  let rgb = hslToRgb(hsl);
-  let hsv = hslToHsv(hsl);
-  let cmyk = hslToCmyk(hsl);
-  let hex = hslToHex(hsl);
-  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
-  let obj = {
-    RGB: rgb,
-    HSV: hsv,
-    HSL: { h: hsl.h, s: hsl.s, l: hsl.l },
-    CMYK: cmyk,
-    HEX: hex,
-    NAME: name,
-  };
-  return obj;
-}
-
-export function cmykToAll(cmyk) {
-  let rgb = cmykToRgb(cmyk);
-  let hsv = cmykToHsv(cmyk);
-  let hex = cmykToHex(cmyk);
-  let name = hexToNameTable.get(rgbToHex(rgb)) || null;
-  let obj = {
-    RGB: rgb,
-    HSV: hsv,
-    HSL: hsl,
-    CMYK: { c: cmyk.c, m: cmyk.m, y: cmyk.y, k: cmyk.k },
-    HEX: hex,
-    NAME: name,
-  };
-  return obj;
-}
-
-export function hexToAll(hex) {
-  let regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
-  if (regex.test(hex) == false) {
-    return null;
-  } else {
-    let rgb = hexToRgb(hex);
-    let hsv = rgbToHsv(rgb);
-    let cmyk = rgbToCmyk(rgb);
-    let name = hexToNameTable.get(hex) || null;
-    let obj = {
-      RGB: rgb,
-      HSV: hsv,
-      HSL: hsl,
-      CMYK: cmyk,
-      HEX: hex,
-      NAME: name,
-    };
-    return obj;
-  }
-}
-
-export function nameToAll(name) {
-  let regex = new RegExp(/^[a-z]$/);
-  if (regex.test(name.toLowerCase()) == false) {
-    return null;
-  } else {
-    let hex = nameToHexTable.get(name);
-    let rgb = hexToRgb(hex);
-    let hsv = rgbToHsv(rgb);
-    let hsl = rgbToHsl(rgb);
-    let cmyk = rgbToCmyk(rgb);
-    let name = name;
-    let obj = {
-      RGB: rgb,
-      HSV: hsv,
-      HSL: hsl,
-      CMYK: cmyk,
-      HEX: hex,
-      NAME: name,
-    };
-    return obj;
-  }
-}
-
 export function constrain(lowerLim, upperLim, val) {
   if (val < lowerLim) {
     val = lowerLim;
@@ -392,7 +400,7 @@ export function paramsToHsv(h, s, v) {
 }
 
 export function paramsToHsl(h, s, l) {
-  let obj = { rh: parseInt(h), s: parseInt(s), l: parseInt(l) };
+  let obj = { h: parseInt(h), s: parseInt(s), l: parseInt(l) };
   return obj;
 }
 
