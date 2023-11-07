@@ -866,16 +866,20 @@ curl_close($ch);
 <img valign='middle' alt='#32ff5f' src='https://readme-swatches.vercel.app/32ff5f?style=circle'/><img valign='middle' alt='#7dff32' src='https://readme-swatches.vercel.app/7dff32?style=circle'/><img valign='middle' alt='#f4ff32' src='https://readme-swatches.vercel.app/f4ff32?style=circle'/>
 
 **Analogous Palette** - A five-color palette on an HSL color wheel where four colors, which are 20 and 40 degrees away in each direction are chosen to go with the original color.
+<img valign='middle' alt='#bcff42' src='https://readme-swatches.vercel.app/bcff42?style=circle'/><img valign='middle' alt='#fbff42' src='https://readme-swatches.vercel.app/fbff42?style=circle'/><img valign='middle' alt='#7dff41' src='https://readme-swatches.vercel.app/7dff41?style=circle'/><img valign='middle' alt='#42ff45' src='https://readme-swatches.vercel.app/42ff45?style=circle'/><img valign='middle' alt='#42ff84' src='https://readme-swatches.vercel.app/42ff84?style=circle'/>
 
 **Complementary Palette** - A two-color palette on an HSL color wheel where a color 180 degrees away from the original color is chosen to go with the original color.
+<img valign='middle' alt='#ff0000' src='https://readme-swatches.vercel.app/ff0000?style=circle'/><img valign='middle' alt='#00ffff' src='https://readme-swatches.vercel.app/00ffff?style=circle'/>
 
 **CSS named color** - Official CSS color names found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color).
 
 **CMYK** - Cyan, Magenta, Yellow, and Black. A color system often associated with printing.
 
 **Equilateral Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, at 90, 180, and 270 degrees away from the original are chosen to go with the original color.
+<img valign='middle' alt='#3fff3f' src='https://readme-swatches.vercel.app/3fff3f?style=circle'/><img valign='middle' alt='#3d9eff' src='https://readme-swatches.vercel.app/3d9eff?style=circle'/><img valign='middle' alt='#ff3dff' src='https://readme-swatches.vercel.app/ff3dff?style=circle'/><img valign='middle' alt='#ff3d40' src='https://readme-swatches.vercel.app/ff3d40?style=circle'/>
 
 **Equilateral Triad Palette** - A three-color palette on an HSL color wheel where two colors, at 120 and 240 degrees away from the original are chosen to go with the original color.
+<img valign='middle' alt='#7d3f7d' src='https://readme-swatches.vercel.app/7d3f7d?style=circle'/><img valign='middle' alt='#7d7d3f' src='https://readme-swatches.vercel.app/7d7d3f?style=circle'/><img valign='middle' alt='#3f7d7d' src='https://readme-swatches.vercel.app/3f7d7d?style=circle'/>
 
 **HEX** - A Hexidecimal (base16) string used to represent RGB color, often used in CSS and elsewhere. The string opens with a hashtag and is followed by a two-place hexidecimal representation of each element (red, green, and blue) in an RGB color, such as "#ff68e2".
 
@@ -884,13 +888,18 @@ curl_close($ch);
 **HSV** - Hue, Saturation, Value. A color system that represents colors with three characteristics. Of note is the subtle but important difference between "value" and "lightness", which is used in the HSL color system in lieu of "value".
 
 **Interpolation** - A nine-color palette where seven colors are evenly stepped in their red, green, and blue componenets from two given colors used as beginning and end.
+<img valign='middle' alt='#00ff00' src='https://readme-swatches.vercel.app/00ff00?style=circle'/><img valign='middle' alt='#00ff3f' src='https://readme-swatches.vercel.app/00ff3f?style=circle'/><img valign='middle' alt='#00ff7f' src='https://readme-swatches.vercel.app/00ff7f?style=circle'/><img valign='middle' alt='#00ffbf' src='https://readme-swatches.vercel.app/00ffbf?style=circle'/><img valign='middle' alt='#00ffff' src='https://readme-swatches.vercel.app/00ffff?style=circle'/><img valign='middle' alt='#00bfff' src='https://readme-swatches.vercel.app/00bfff?style=circle'/><img valign='middle' alt='#007fff' src='https://readme-swatches.vercel.app/007fff?style=circle'/><img valign='middle' alt='#003fff' src='https://readme-swatches.vercel.app/003fff?style=circle'/><img valign='middle' alt='#0000ff' src='https://readme-swatches.vercel.app/0000ff?style=circle'/>
 
 **Monochromatic Palette** - A five-color palette on an HSL color wheel where four colors, all the same hue and saturation, but varying in lightness in steps of 10% are chosen to go with the original color. The original color always falls in the palette, but where, depends on it lightness.
+<img valign='middle' alt='#3f7dff' src='https://readme-swatches.vercel.app/3f7dff?style=circle'/><img valign='middle' alt='#709fff' src='https://readme-swatches.vercel.app/709fff?style=circle'/><img valign='middle' alt='#a3c1ff' src='https://readme-swatches.vercel.app/a3c1ff?style=circle'/><img valign='middle' alt='#d6e3ff' src='https://readme-swatches.vercel.app/d6e3ff?style=circle'/><img valign='middle' alt='#ffffff' src='https://readme-swatches.vercel.app/ffffff?style=circle'/>
 
 **Phi Tetrad Palette** - A four-color palette on an HSL color wheel where three colors, one complenetary to the original and the others phi degrees away from the original and complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio and is approximately 36 degrees.
+<img valign='middle' alt='#7d3fff' src='https://readme-swatches.vercel.app/7d3fff?style=circle'/><img valign='middle' alt='#ee3dff' src='https://readme-swatches.vercel.app/ee3dff?style=circle'/><img valign='middle' alt='#ff3d40' src='https://readme-swatches.vercel.app/ff3d40?style=circle'/><img valign='middle' alt='#ffc83d' src='https://readme-swatches.vercel.app/ffc83d?style=circle'/>
 
 **Phi Triad Palette** - A three-color palette on an HSL color wheel where two colors, each phi degrees away from the original's complement are chosen to go with the original color. Phi is the "Golden Angle", used to derive the Golden Ratio, and is approximately 36 degrees.
+<img valign='middle' alt='#7d3f3f' src='https://readme-swatches.vercel.app/7d3f3f?style=circle'/><img valign='middle' alt='#73f7d64' src='https://readme-swatches.vercel.app/73f7d64?style=circle'/><img valign='middle' alt='#647d3f' src='https://readme-swatches.vercel.app/647d3f?style=circle'/>
 
 **RGB** - Red, Green, Blue. This quite common additive color system is used to represent colors with three charactistics based on the amount of red, green, and blue that comprise the final color.
 
 **Split Complemenetary Palette** - A four-color palette on an HSL color wheel where three colors, the complement, and one 35 degrees away on each side of the complement are chosen to go with the original color.
+<img valign='middle' alt='#00ff00' src='https://readme-swatches.vercel.app/00ff00?style=circle'/><img valign='middle' alt='#00ff7f' src='https://readme-swatches.vercel.app/00ff7f?style=circle'/><img valign='middle' alt='#7f00ff' src='https://readme-swatches.vercel.app/7f00ff?style=circle'/><img valign='middle' alt='#ff00ff' src='https://readme-swatches.vercel.app/ff00ff?style=circle'/>
