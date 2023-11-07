@@ -20,7 +20,9 @@ This API is available on RapidAPI at color-gopher-api.
 &nbsp;&nbsp;&nbsp;&nbsp;none  
 **Responses:**
 
-<code>200-OK</code>
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -37,8 +39,11 @@ This API is available on RapidAPI at color-gopher-api.
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -84,8 +89,11 @@ This API is available on RapidAPI at color-gopher-api.
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -131,8 +139,11 @@ This API is available on RapidAPI at color-gopher-api.
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -179,8 +190,11 @@ This API is available on RapidAPI at color-gopher-api.
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
 k - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -224,8 +238,11 @@ k - string (query)
 **Description:** Converts a HEX to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -269,8 +286,11 @@ k - string (query)
 **Description:** Converts a valid CSS-named-color to every other type in this API. Returns null if name is invalid.
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
 
 **Response Body:**
 
@@ -316,8 +336,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -330,8 +354,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -344,8 +372,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -358,8 +390,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -372,8 +408,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -386,8 +426,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -400,8 +444,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -414,8 +462,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -428,8 +480,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -445,8 +501,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r2 - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g2 - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b2 - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -459,8 +519,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -473,8 +537,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -487,8 +555,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -502,8 +574,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -516,8 +592,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -530,8 +610,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -544,8 +628,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;b - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -556,8 +644,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -570,8 +662,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -584,8 +680,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -598,8 +698,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -613,8 +717,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -627,8 +735,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -642,8 +754,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -656,8 +772,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -668,8 +788,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -682,8 +806,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -694,8 +822,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -709,8 +841,12 @@ k - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;y - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;k - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -721,8 +857,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -733,8 +873,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -745,8 +889,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -757,8 +905,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -769,8 +921,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -781,8 +937,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 <hr>
@@ -793,8 +953,12 @@ k - string (query)
 **Description:**  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)  
-**Responses:**  
-<code>200 - OK</code>
+**Responses:**
+
+```200-OK
+
+```
+
 **Response Body:**
 
 ## Code Examples:
