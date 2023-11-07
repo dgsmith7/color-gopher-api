@@ -12,7 +12,6 @@ This API is available on RapidAPI at color-gopher-api.
 
 ## API Reference: Color Gopher API 1.0.0
 
-<hl>
 ### Endpoint: /
 
 **Method:** GET  
@@ -28,7 +27,8 @@ This API is available on RapidAPI at color-gopher-api.
 <code>"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
 </code>
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/rgb-to-all
 
 **Method:** GET  
@@ -74,7 +74,8 @@ This API is available on RapidAPI at color-gopher-api.
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsv-to-all
 
 **Method:** GET  
@@ -120,7 +121,8 @@ This API is available on RapidAPI at color-gopher-api.
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsl-to-all
 
 **Method:** GET  
@@ -166,7 +168,8 @@ This API is available on RapidAPI at color-gopher-api.
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/cmyk-to-all
 
 **Method:** GET  
@@ -213,7 +216,8 @@ k - string (query)
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-all
 
 **Method:** GET  
@@ -257,7 +261,8 @@ k - string (query)
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-all
 
 **Method:** GET  
@@ -301,7 +306,8 @@ k - string (query)
 }
 ```
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-complement
 
 **Method:** GET  
@@ -314,7 +320,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-split-complement
 
 **Method:** GET  
@@ -327,7 +334,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-adjacent
 
 **Method:** GET  
@@ -340,7 +348,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-analagous
 
 **Method:** GET  
@@ -353,7 +362,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-phi-triad
 
 **Method:** GET  
@@ -366,7 +376,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-equi-triad
 
 **Method:** GET  
@@ -379,7 +390,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-phi-tetrad
 
 **Method:** GET  
@@ -392,7 +404,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-equi-tetrad
 
 **Method:** GET  
@@ -405,7 +418,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-mono-scale
 
 **Method:** GET  
@@ -418,7 +432,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/palette-interpolate
 
 **Method:** GET  
@@ -434,7 +449,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/rgb-to-hsv
 
 **Method:** GET  
@@ -447,7 +463,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsv-to-rgb
 
 **Method:** GET  
@@ -460,7 +477,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/rgb-to-cmyk
 
 **Method:** GET  
@@ -473,7 +491,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/cmyk-to-rgb
 
 **Method:** GET  
@@ -487,7 +506,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/rgb-to-hsl
 
 **Method:** GET  
@@ -500,7 +520,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsl-to-rgb
 
 **Method:** GET  
@@ -513,7 +534,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/rgb-to-hex
 
 **Method:** GET  
@@ -526,7 +548,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-rgb
 
 **Method:** GET  
@@ -537,7 +560,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsv-to-hsl
 
 **Method:** GET  
@@ -550,7 +574,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsl-to-hsv
 
 **Method:** GET  
@@ -563,7 +588,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsl-to-cmyk
 
 **Method:** GET  
@@ -576,7 +602,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/cmyk-to-hsl
 
 **Method:** GET  
@@ -590,7 +617,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsv-to-cmyk
 
 **Method:** GET  
@@ -603,7 +631,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/cmyk-to-hsv
 
 **Method:** GET  
@@ -617,7 +646,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsv-to-hex
 
 **Method:** GET  
@@ -630,7 +660,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-hsv
 
 **Method:** GET  
@@ -641,7 +672,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hsl-to-hex
 
 **Method:** GET  
@@ -654,7 +686,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-hsl
 
 **Method:** GET  
@@ -665,7 +698,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/cmyk-to-hex
 
 **Method:** GET  
@@ -679,7 +713,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-cmyk
 
 **Method:** GET  
@@ -690,7 +725,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-hex
 
 **Method:** GET  
@@ -701,7 +737,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/hex-to-name
 
 **Method:** GET  
@@ -712,7 +749,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-rgb
 
 **Method:** GET  
@@ -723,7 +761,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-hsv
 
 **Method:** GET  
@@ -734,7 +773,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-hsl
 
 **Method:** GET  
@@ -745,7 +785,8 @@ k - string (query)
 <code>200 - OK</code>
 **Response Body:**
 
-<hl>
+<hr>
+
 ### Endpoint: /gopher/name-to-cmyk
 
 **Method:** GET  
