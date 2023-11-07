@@ -34,7 +34,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/rgb-to-all
 
 **Method:** GET  
-**Description:** Converts an RGB to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
+**Description:** Converts an RGB to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)  
@@ -84,7 +84,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsv-to-all
 
 **Method:** GET  
-**Description:** Converts an HSV to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
+**Description:** Converts an HSV to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -134,7 +134,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hsl-to-all
 
 **Method:** GET  
-**Description:** Converts an HSL to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
+**Description:** Converts an HSL to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)  
@@ -184,7 +184,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/cmyk-to-all
 
 **Method:** GET  
-**Description:** Converts a CMYK to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
+**Description:** Converts a CMYK to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)  
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)  
@@ -235,7 +235,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /gopher/hex-to-all
 
 **Method:** GET  
-**Description:** Converts a HEX to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.  
+**Description:** Converts a HEX to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Invalid string input returns a null.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)  
 **Responses:**
@@ -809,7 +809,7 @@ This API is available on RapidAPI at color-gopher-api.
 }
 ```
 
-## Code Examples:
+<!-- ## Code Examples:
 
 _*CURL:*_
 
@@ -858,7 +858,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
 $response = curl_exec($ch);
 
 curl_close($ch);
-```
+``` -->
 
 ## Glossary:
 
