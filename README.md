@@ -863,7 +863,7 @@ curl_close($ch);
 ## Glossary:
 
 **Adjacent Palette** - A three-color palette on an HSL color wheel where two colors, one 35 degrees away in each direction are chosen to go with the original color.
-<img valign='middle' alt='#CC0066' src='https://readme-swatches.vercel.app/CC0066'/>
+<img valign='middle' alt='#32ff5f' src='https://readme-swatches.vercel.app/32ff5f?style=circle'/><img valign='middle' alt='#7dff32' src='https://readme-swatches.vercel.app/7dff32?style=circle'/><img valign='middle' alt='#f4ff32' src='https://readme-swatches.vercel.app/f4ff32?style=circle'/>
 
 **Analogous Palette** - A five-color palette on an HSL color wheel where four colors, which are 20 and 40 degrees away in each direction are chosen to go with the original color.
 
