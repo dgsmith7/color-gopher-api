@@ -497,19 +497,19 @@ Response Body:
 
 <h2><b>Code Examples:</b></h2>
 <b>CURL:</b>
-`
+```
 curl -X 'GET' \
  'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
  -H 'accept: _/_'
-`
+```
 JS:
-`
+```
 fetch('http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0', {
 headers: {
 'accept': '_/_'
 }
 });
-`
+```
 PYTHON:
 import http.client
 
