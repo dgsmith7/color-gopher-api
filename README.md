@@ -1,6 +1,6 @@
 # color-gopher-api
 
-<img src="./public/color-gopher.png" radius="7" width="150" height="150">
+<img src="./public/color-gopher.png" width="150" height="150">
 
 ## Introduction:
 
@@ -12,12 +12,14 @@ This API is available on RapidAPI at color-gopher-api.
 
 ## API Reference: Color Gopher API 1.0.0
 
-**Endpoint:** /
-**Method:** GET
-**Description:** Landing page.
-**Parameters:**
-&nbsp;&nbsp;&nbsp;&nbsp;none
-**Responses:** <code>200-OK</code>
+**Endpoint:** /  
+**Method:** GET  
+**Description:** Landing page.  
+**Parameters:**  
+&nbsp;&nbsp;&nbsp;&nbsp;none  
+**Responses:**
+<code>200-OK</code>
+
 **Response Body:**
 
 <code>"Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
