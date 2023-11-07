@@ -498,10 +498,12 @@ Response Body:
 <h2><b>Code Examples:</b></h2>
 CURL:
 <code>
-curl -X 'GET' \
- 'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
- -H 'accept: _/_'
+  curl -X 'GET' \
+   'http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0' \
+   -H 'accept: _/_'
+   </code>
 JS:
+<code>
 fetch('http://localhost:5500/gopher/rgb-to-all?r=255&g=0&b=0', {
 headers: {
 'accept': '_/_'
