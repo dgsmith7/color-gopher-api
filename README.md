@@ -92,7 +92,7 @@ This API is available on RapidAPI at color-gopher-api.
 **Responses:**
 
 ```200-OK
-
+200-OK
 ```
 
 **Response Body:**
