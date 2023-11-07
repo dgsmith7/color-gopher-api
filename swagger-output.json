@@ -20,7 +20,7 @@
   "paths": {
     "/": {
       "get": {
-        "description": "",
+        "description": "Landing page.",
         "responses": {
           "200": {
             "description": "OK"
@@ -30,7 +30,7 @@
     },
     "/gopher/rgb-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts an RGB to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.",
         "parameters": [
           {
             "name": "r",
@@ -63,7 +63,7 @@
     },
     "/gopher/hsv-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts an HSV to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.",
         "parameters": [
           {
             "name": "h",
@@ -96,7 +96,7 @@
     },
     "/gopher/hsl-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts an HSL to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.",
         "parameters": [
           {
             "name": "h",
@@ -129,7 +129,7 @@
     },
     "/gopher/cmyk-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts a CMYK to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Out-of-limit parameters are clamped to acceptable limits.",
         "parameters": [
           {
             "name": "c",
@@ -169,7 +169,7 @@
     },
     "/gopher/hex-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts a HEX to every type in this API. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name. Invalid string input returns a null.",
         "parameters": [
           {
             "name": "hex",
@@ -188,7 +188,7 @@
     },
     "/gopher/name-to-all": {
       "get": {
-        "description": "",
+        "description": "Converts a valid CSS-named-color to every type in this API. Returns null if name is invalid. Those types are RGB, HSV, HSL, CMYK, Hex, and CSS-name.",
         "parameters": [
           {
             "name": "name",
@@ -207,7 +207,7 @@
     },
     "/gopher/palette-complement": {
       "get": {
-        "description": "",
+        "description": "A two-color palette on an HSL color wheel where a color 180 degrees away from the original color is chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -240,7 +240,7 @@
     },
     "/gopher/palette-split-complement": {
       "get": {
-        "description": "",
+        "description": "A four-color palette on an HSL color wheel where three colors, the complement, and one 35 degrees away on each side of the complement are chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -273,7 +273,7 @@
     },
     "/gopher/palette-adjacent": {
       "get": {
-        "description": "",
+        "description": "A three-color palette on an HSL color wheel where two colors, one 35 degrees away in each direction are chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -306,7 +306,7 @@
     },
     "/gopher/palette-analogous": {
       "get": {
-        "description": "",
+        "description": "A five-color palette on an HSL color wheel where four colors, which are 20 and 40 degrees away in each direction are chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -339,7 +339,7 @@
     },
     "/gopher/palette-phi-triad": {
       "get": {
-        "description": "",
+        "description": "A three-color palette on an HSL color wheel where two colors, each phi degrees away from the original's complement are chosen to go with the original color. Phi is the Golden Angle, used to derive the Golden Ratio, and is approximately 36 degrees.",
         "parameters": [
           {
             "name": "r",
@@ -372,7 +372,7 @@
     },
     "/gopher/palette-equi-triad": {
       "get": {
-        "description": "",
+        "description": "A three-color palette on an HSL color wheel where two colors, at 120 and 240 degrees away from the original are chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -405,7 +405,7 @@
     },
     "/gopher/palette-phi-tetrad": {
       "get": {
-        "description": "",
+        "description": "A four-color palette on an HSL color wheel where three colors, one complenetary to the original and the others phi degrees away from the original and complement are chosen to go with the original color. Phi is the Golden Angle, used to derive the Golden Ratio and is approximately 36 degrees.",
         "parameters": [
           {
             "name": "r",
@@ -438,7 +438,7 @@
     },
     "/gopher/palette-equi-tetrad": {
       "get": {
-        "description": "",
+        "description": "A four-color palette on an HSL color wheel where three colors, at 90, 180, and 270 degrees away from the original are chosen to go with the original color.",
         "parameters": [
           {
             "name": "r",
@@ -504,7 +504,7 @@
     },
     "/gopher/palette-interpolate": {
       "get": {
-        "description": "",
+        "description": "A five-color palette on an HSL color wheel where four colors, all the same hue and saturation, but varying in lightness in steps of 10% are chosen to go with the original color. The original color always falls in the palette, but where, depends on it lightness.",
         "parameters": [
           {
             "name": "r1",
