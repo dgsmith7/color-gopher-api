@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "swagger": "node swagger.js"
   },
   "keywords": [
     "color",
@@ -19,9 +20,16 @@
   ],
   "author": "David G. Smith",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgsmith7/color-gopher-api"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
   }
 }

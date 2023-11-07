@@ -8,11 +8,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-//router
+// router
 app.use("/gopher", router);
 
+// base route
 app.get("/", (req, res) => {
-  res.json("Welcome to the Color Gopher API");
+  res.json(
+    "Welcome to the Color Gopher API - Copyright (c) 2023 by David G. Smith"
+  );
 });
 
 // serve up the css and images statically
