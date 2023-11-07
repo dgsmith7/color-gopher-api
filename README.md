@@ -15,8 +15,7 @@ This API is available on RapidAPI at color-gopher-api.
 ### Endpoint: /
 
 **Method:** GET  
-**Description:**  
-Landing page.  
+**Description:** Landing page.  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;none  
 **Responses:**
@@ -31,7 +30,7 @@ Landing page.
 ### Endpoint: /gopher/rgb-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts an RGB to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;r - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;g - string (query)
@@ -76,31 +75,97 @@ Landing page.
 ### Endpoint: /gopher/hsv-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts an HSV to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;v - string (query)
 **Responses:**  
 <code>200 - OK</code>
+
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
+}
+```
 
 ### Endpoint: /gopher/hsl-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts an HSL to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;h - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;s - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;l - string (query)
 **Responses:**  
 <code>200 - OK</code>
+
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
+}
+```
 
 ### Endpoint: /gopher/cmyk-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts a CMYK to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;c - string (query)
 &nbsp;&nbsp;&nbsp;&nbsp;m - string (query)
@@ -108,27 +173,126 @@ Landing page.
 k - string (query)
 **Responses:**  
 <code>200 - OK</code>
+
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
+}
+```
 
 ### Endpoint: /gopher/hex-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts a HEX to every other type in this API  
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;hex - string (query)
 **Responses:**  
 <code>200 - OK</code>
+
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
+}
+```
 
 ### Endpoint: /gopher/name-to-all
 
 **Method:** GET  
-**Description:**  
+**Description:** Converts a valid CSS-named-color to every other type in this API. Returns null if name is invalid.
 **Parameters:**  
 &nbsp;&nbsp;&nbsp;&nbsp;name - string (query)
 **Responses:**  
 <code>200 - OK</code>
+
 **Response Body:**
+
+```{
+  "status": "success",
+  "data": {
+    "ALL": {
+      "RGB": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "HSV": {
+        "h": 255,
+        "s": 0,
+        "v": 0
+      },
+      "HSL": {
+        "h": null,
+        "s": null,
+        "v": null
+      },
+      "CMYK": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 100
+      },
+      "HEX": "#000000",
+      "NAME": "black"
+    }
+  }
+}
+```
 
 ### Endpoint: /gopher/palette-complement
 
