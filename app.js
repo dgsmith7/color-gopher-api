@@ -1,21 +1,22 @@
 import express from "express";
 import cors from "cors";
-import * as swaggerUi from "swagger-ui-express";
+// import * as swaggerUi from "swagger-ui-express";
 
 import { router } from "./routes/gopher.js";
 import { readFile } from "fs/promises";
 
 // Parse JSON file because you cont import with ECMA6
 // import swaggerFile from "./swagger-output.json";
-const swaggerFile = JSON.parse(
-  await readFile(new URL("./swagger-output.json", import.meta.url))
-);
+// const swaggerFile = JSON.parse(
+//   await readFile(new URL("./swagger-output.json", import.meta.url))
+// );
+
 const app = express();
 
 //middleware
 app.use(express.json());
 app.use(cors());
-app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
+// app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 // router
 app.use("/gopher", router);
@@ -46,13 +47,14 @@ app.use((err, req, res, next) => {
       url: "https://rapidapi.com/color-gopher-api/docs.html",
     },
   };
+  res.status(err.status);
   res.send(obj);
 });
 
-// 404 error-handling
+//404 error-handling
 app.use((req, res, next) => {
   let obj = {
-    error: {
+    info: {
       message: "There is no such page. Try another URL.",
       statusCode: 404,
       url: "https://rapidapi.com/color-gopher-api/docs.html",

@@ -14,8 +14,6 @@ router.get(`/rgb-to-all`, function (req, res) {
     data: { ALL: converters.rgbToAll(rgb) },
   };
   res.status(200).json(obj);
-  // let obj = converters.rgbToAll({ r: 5, g: 7, b: 7 });
-  res.json(obj);
 });
 
 router.get(`/hsv-to-all`, function (req, res) {
